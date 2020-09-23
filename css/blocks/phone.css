@@ -1,0 +1,5 @@
+.phone__number:before {
+  content: url("../../img/icons/phone.svg");
+}
+
+/*# sourceMappingURL=phone.css.map */

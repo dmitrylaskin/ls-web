@@ -1,0 +1,25 @@
+.advantages {
+  margin-bottom: 50px;
+}
+.advantages__icon {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.advantages__icon-wrapper {
+  margin-right: 15px;
+  max-height: 40px;
+  max-width: 40px;
+}
+.advantages__list {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+.advantages__item {
+  display: flex;
+  align-items: center;
+}
+.advantages__text {
+  width: 70px;
+}

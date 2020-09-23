@@ -1,0 +1,27 @@
+.sidebar {
+  position: absolute;
+  right: 50px;
+  top: 210px;
+  z-index: 10;
+
+  &__item {
+
+
+  }
+
+
+  &__icon {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #fff;
+
+
+
+
+
+    &--active {
+    }
+  }
+}

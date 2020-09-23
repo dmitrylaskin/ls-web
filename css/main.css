@@ -1,0 +1,154 @@
+@import './layout/fonts.css';
+@import './layout/base.css';
+@import './layout/reset_styles.css';
+@import './layout/normolize.css';
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  margin-bottom: 80px;
+}
+
+.logo {
+  margin-right: 42px;
+}
+
+.navbar {
+  flex: 1;
+  margin-right: 42px;
+}
+
+.navbar__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+}
+.phone__icon {
+  margin-right: 6px;
+  width: 14px;
+  height: 14px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%);
+}
+
+.page-title {
+  width: 353px;
+  margin-bottom: 64px;
+}
+
+.page-title__title {
+  margin: 0 0 17px 0;
+  font-size: 48px;
+  line-height: 58px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.page-title__subtitle {
+  font-size: 21px;
+  line-height: 25px;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 100px;
+  background: #fff;
+  color: #365A49;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.leaf {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.bars {
+  position: absolute;
+  right: 23px;
+  top: 54px;
+}
+
+.leaf-1 {
+  position: absolute;
+  right: 11px;
+  bottom: 111px;
+}
+
+.leaf-2 {
+  position: absolute;
+  right: 279px;
+  bottom: -31px;
+}
+
+.leaf-3 {
+  position: absolute;
+  bottom: -32px;
+  left: 37px;
+}
+
+.berries-1 {
+  position: absolute;
+  right: 256px;
+  bottom: 36px;
+}
+
+.berries-2 {
+  position: absolute;
+  right: 91px;
+  bottom: -46px;
+}
+
+.sidebar {
+  position: absolute;
+  right: 50px;
+  top: 210px;
+  z-index: 10;
+}
+.sidebar__icon {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #fff;
+}
+.advantages {
+  margin-bottom: 50px;
+}
+
+.advantages__icon {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.advantages__icon-wrapper {
+  margin-right: 15px;
+  max-height: 40px;
+  max-width: 40px;
+}
+
+.advantages__list {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.advantages__item {
+  display: flex;
+  align-items: center;
+}
+
+.advantages__text {
+  width: 70px;
+}
+
+/*# sourceMappingURL=main.css.map */

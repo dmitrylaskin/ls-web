@@ -1,0 +1,41 @@
+html, body {
+    height: 100%;
+}
+body {
+    /*background-color: #001821;*/
+    color: #ffffff;
+    font-family: 'AlegreyaSans', Helvetica, sans-serif;
+    /*line-height: 1.42;*/
+    /*font-size: 16px;*/
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;   
+}
+a {
+    color: #ffffff;
+}
+
+.wrapper {
+
+    overflow: hidden;
+    min-width: 1200px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.wrapper__content {
+    flex: 1;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    
+}
+.hero {
+    background: #61C4D9;
+    position: relative;
+
+}
