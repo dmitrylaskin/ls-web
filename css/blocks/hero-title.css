@@ -1,18 +1,21 @@
-.page-title {
+.hero-title {
   width: 353px;
   margin-bottom: 64px;
-
 }
-.page-title__title {
+
+.hero-title__title {
   margin: 0 0 17px 0;
   font-size: 48px;
   line-height: 58px;
   text-transform: uppercase;
   font-weight: 700;
 }
-.page-title__subtitle {
+
+.hero-title__subtitle {
   font-size: 21px;
   line-height: 25px;
   font-weight: 300;
   margin-bottom: 32px;
 }
+
+/*# sourceMappingURL=hero-title.css.map */

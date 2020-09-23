@@ -10,3 +10,9 @@
     font-style: normal;
     font-weight: 700;
 }
+@font-face {
+    font-family: "AlegreyaSans";
+    src: url("./fonts/AlegreyaSans-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
