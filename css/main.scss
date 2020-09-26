@@ -4,6 +4,7 @@
 @import './layout/normolize.css';
 
 //hero section
+@import './blocks/hero';
 @import './blocks/header';
 @import './blocks/logo';
 @import './blocks/navbar';
@@ -18,3 +19,6 @@
 //why section
 @import './blocks/why-section';
 @import './blocks/why-pics';
+
+//order section
+@import './blocks/order';

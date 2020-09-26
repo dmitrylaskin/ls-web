@@ -1,0 +1,34 @@
+.order {
+  display: flex;
+}
+
+.order__img-wrapper {
+  display: inline-block;
+  width: 363px;
+  height: 386px;
+  position: relative;
+  border: 1px dashed red;
+
+
+}
+.order__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+
+}
+.order__dropdown {
+  width: 90px;
+  height: 90px;
+  background: #86C3D7;
+}
+.order__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  color: #292929;
+}
+.order__text {
+  color: #666666;
+}

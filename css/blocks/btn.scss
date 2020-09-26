@@ -2,12 +2,16 @@
   display: inline-block;
   padding: 20px 40px;
   border-radius: 100px;
-  background: #fff;
-  color: #365A49;
+
   text-transform: uppercase;
   font-weight: 700;
 
 }
-.page-title__btn {
-
+.hero-title__btn {
+  background: #fff;
+  color: #365A49;
+  &:hover {
+    background: #365A49;
+    color: #fff;
+  }
 }
