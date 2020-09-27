@@ -1,0 +1,18 @@
+.reviews-section {
+  background: url("../img/decor/strawberry-cereal.png") right 20px top 10px no-repeat;
+  position: relative;
+}
+.reviews-section:before {
+  content: url("../img/decor/side-round-leaf.png");
+  position: absolute;
+  bottom: -162px;
+  left: 0;
+}
+.reviews-section:after {
+  content: url("../img/decor/assorted-berries.png");
+  position: absolute;
+  bottom: -90px;
+  left: 0;
+}
+
+/*# sourceMappingURL=reviews-section.css.map */

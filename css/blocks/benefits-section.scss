@@ -1,0 +1,11 @@
+.benefits-section {
+  position: relative;
+  background: url("../img/icons/why-page/leaf4.png") left top 57% no-repeat;
+
+  &:before {
+    content: url("../img/icons/why-page/raspberry.png");
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+  }
+}

@@ -3,7 +3,7 @@
 @import './layout/reset_styles.css';
 @import './layout/normolize.css';
 .hero {
-  background: url("../../img/icons/main-page/tracery.png") right bottom no-repeat;
+  background: url("../img/icons/main-page/tracery.png") right bottom no-repeat;
   background-color: #61C4D9;
   position: relative;
   height: 100vh;
@@ -12,12 +12,13 @@
 }
 .hero:before {
   position: absolute;
-  content: url("../../img/icons/main-page/leaf1.png");
+  content: url("../img/icons/main-page/leaf3.png");
   bottom: -40px;
   left: 2%;
 }
 .hero:after {
-  content: url("../../img/icons/main-page/leaf2.png");
+  position: absolute;
+  content: url("../img/icons/main-page/berries.png");
   bottom: -40px;
   right: 0;
 }
@@ -28,7 +29,7 @@
   justify-content: space-between;
   height: 100%;
   padding: 24px 0 50px 0;
-  background: url("../../img/icons/main-page/bars.png") right center/50% auto no-repeat;
+  background: url("../img/icons/main-page/bars.png") right center/50% auto no-repeat;
 }
 
 .header {
@@ -185,71 +186,117 @@
   max-width: 70px;
 }
 
-.why {
+.section {
+  height: 100vh;
+  min-height: 650px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
 
-.why__title {
-  display: inline-block;
-  color: #292929;
+.section__title {
   font-size: 48px;
-  font-weight: 700;
+  font-weight: bold;
+  margin-bottom: 32px;
+  text-align: center;
   text-transform: uppercase;
-  padding-top: 100px;
-  margin-bottom: 20px;
+  color: #000;
+  line-height: 1.1;
 }
 
-.why__list {
-  display: flex;
-  margin-bottom: 114px;
+.headline__subtitle {
+  color: #000;
 }
 
-.why__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.benefits-section {
+  position: relative;
+  background: url("../img/icons/why-page/leaf4.png") left top 57% no-repeat;
+}
+.benefits-section:before {
+  content: url("../img/icons/why-page/raspberry.png");
+  position: absolute;
+  bottom: -80px;
+  left: 0;
 }
 
-.why__subtitle {
+.benefit {
+  text-align: center;
+}
+
+.benefit__image-wrapper {
   display: inline-block;
-  width: 436px;
+  width: 126px;
+  height: 126px;
+  position: relative;
+  background: #f2f5f4;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.benefit__icon {
+  width: 75px;
+  height: 69px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.benefit__title {
+  font-size: 27px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.benefit__image {
+  margin-bottom: 19px;
+}
+
+.benefit__desc p {
   color: #666666;
   font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-  margin-bottom: 50px;
 }
 
-.why__item-pic {
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-}
-
-.why__item-icon {
+.benefits {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #F2F5F4;
-  width: 128px;
-  height: 128px;
-  border-radius: 50%;
-  margin-bottom: 20px;
 }
 
-.why__item-text {
-  color: #666666;
+.benefits__item {
+  flex: 1;
+  padding: 0 3%;
+  position: relative;
+}
+.benefits__item:before {
+  content: url("../img/icons/why-page/separator.png");
+  position: absolute;
+  top: 30px;
+  right: 0;
+  transform: translateX(50%);
+}
+.benefits__item:first-child {
+  padding-left: 0;
+}
+.benefits__item:last-child {
+  padding-right: 0;
+}
+.benefits__item:last-child:before {
+  display: none;
+}
+
+.headline {
   text-align: center;
-  font-weight: 300;
+  margin-bottom: 51px;
 }
 
-.why__item-title {
-  color: #292929;
-  font-size: 27px;
-  font-weight: 700;
-  margin-bottom: 18px;
+.headline__title {
+  margin-bottom: 7px;
+}
+
+.headline__subtitle {
+  padding: 0 26%;
+  color: #666666;
+  font-size: 18px;
 }
 
 .leaf-4 {
@@ -265,39 +312,117 @@
   bottom: -107px;
 }
 
-.order {
+.reviews-section {
+  background: url("../img/icons/review-page/strawberry.png") right 20px top 10px no-repeat;
+  position: relative;
+}
+.reviews-section:before {
+  content: url("../img/icons/review-page/leaf.png");
+  position: absolute;
+  bottom: -162px;
+  left: 0;
+}
+.reviews-section:after {
+  content: url("../img/icons/review-page/berries.png");
+  position: absolute;
+  bottom: -90px;
+  left: 0;
+}
+
+.reviews__display {
+  padding: 50px 45px 34px;
+  background: #f8faf9 url("../img/icons/review-page/flowers.png") right top no-repeat;
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.reviews__display:before {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 90px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -65px;
+}
+
+.reviews__display-inner {
   display: flex;
 }
 
-.order__img-wrapper {
-  display: inline-block;
-  width: 363px;
-  height: 386px;
-  position: relative;
-  border: 1px dashed red;
+.reviews__avatar {
+  width: 254px;
+  height: 260px;
 }
 
-.order__img {
-  position: absolute;
-  left: 0;
-  top: 0;
+.reviews__avatar-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
-.order__dropdown {
-  width: 90px;
-  height: 90px;
-  background: #86C3D7;
+.reviews__content {
+  flex: 1;
+  margin-left: 17px;
+  padding-right: 10%;
+  padding-top: 8px;
 }
 
-.order__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 43px;
-  color: #292929;
+.reviews__title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 22px;
+  color: black;
 }
 
-.order__text {
+.reviews__text {
+  margin-bottom: 36px;
+}
+.reviews__text p {
   color: #666666;
+  font-size: 18px;
+}
+
+.reviews__author {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+
+.reviews__switcher {
+  display: flex;
+  justify-content: center;
+}
+
+.interactive-avatar {
+  width: 80px;
+  height: 80px;
+  border: 6px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+.interactive-avatar--active {
+  border-color: #0f5a47;
+}
+
+.interactive-avatar__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+}
+
+.interactive-avatar__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=main.css.map */

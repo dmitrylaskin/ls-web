@@ -17,8 +17,14 @@
 
 
 //why section
-@import './blocks/why-section';
+@import './blocks/section';
+@import './blocks/benefits-section';
+@import './blocks/benefit';
+@import './blocks/benefits';
+@import './blocks/headline';
 @import './blocks/why-pics';
 
-//order section
-@import './blocks/order';
+//review section
+@import './blocks/reviews-section';
+@import './blocks/reviews';
+@import './blocks/interactive-avatar';
