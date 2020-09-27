@@ -15,3 +15,15 @@
     color: #fff;
   }
 }
+.order-form-btn {
+  background: #365A49;
+  color: #fff;
+  &:hover {
+    background: #fff;
+    color: #365A49;
+  }
+}
+.order-form-reset {
+  background: transparent;
+  color: #365A49;
+}

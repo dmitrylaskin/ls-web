@@ -41,10 +41,17 @@
                             </li>
                         </ul>
                     </nav>
-                    <address class="phone">
-                        <img class="phone__icon" src="./img/icons/phone.svg" alt="">
-                        <a class="phone__number" href="tel: +7 800 903 90 90">8 800 903 90 90</a>
-                    </address>
+                    <a href="tel:+78009039090" class="phone-number">
+                  <span class="phone-number__icon">
+                    <img
+                            src="./img/icons/phone.svg"
+                            class="phone-number__icon-elem"
+                            alt="phone icon"
+                    />
+                  </span>
+                        <span class="phone-number__text">8 800 903 90 90</span>
+                    </a>
+
                 </header>
 
                 <div class="hero-title">
@@ -174,28 +181,9 @@
                         </div>
 
                     </li>
-                    <!--                <li class="benefit__item">-->
-                    <!--                    <div class="benefit__item-icon">-->
-                    <!--                        <img class="benefit__item-pic" src="./img/icons/3.svg" alt="">-->
-                    <!--                    </div>-->
-                    <!--                    <div class="benefit__item-title">Полезно</div>-->
-                    <!--                    <p class="benefit__item-text">-->
-                    <!--                        Нежный, ненавязчивый, изысканный – так клиенты описывают вкусовые качества наших батончиков.-->
-                    <!--                    </p>-->
-                    <!--                </li>-->
-                    <!--                <li class="benefit__item">-->
-                    <!--                    <div class="benefit__item-icon">-->
-                    <!--                        <img class="benefit__item-pic" src="./img/icons/2.svg" alt="">-->
-                    <!--                    </div>-->
-                    <!--                    <div class="benefit__item-title">Полезно</div>-->
-                    <!--                    <p class="benefit__item-text">-->
-                    <!--                        Высокое содержание качественного белка,-->
-                    <!--                        а также всех необходимых витаминов и минералов.-->
-                    <!--                    </p>-->
-                    <!--                </li>-->
+
                 </ul>
-                <!--            <img class="leaf-4" src="./img/icons/why-page/leaf4.png" alt="">-->
-                <!--            <img class="raspberry" src="./img/icons/why-page/raspberry.png" alt="">-->
+
             </div>
 
         </section>
@@ -335,12 +323,12 @@
                             <input
                                     type="submit"
                                     value="Заказать"
-                                    class="btn btn--theme--green"
+                                    class="btn order-form-btn"
                             />
                             <input
                                     type="reset"
                                     value="Очистить"
-                                    class="btn btn--theme--transparent"
+                                    class="btn order-form-reset"
                             />
                         </div>
                     </div>
@@ -349,8 +337,63 @@
         </section>
 
 
-        <section class="team-section">
+        <section class="section map-section">
+            <div id="map"></div>
+            <footer class="footer">
+                <div class="container footer__container">
+                    <address class="contacts">
+                        <div class="contacts__place">
+                            Москва, ул.Новый Арбат, д.31/12
+                        </div>
 
+                        <a href="tel:+78009039090" class="phone-number phone-number--theme--green">
+                  <span class="phone-number__icon">
+                    <img
+                            src="./img/icons/phone.svg"
+                            class="phone-number__icon-elem"
+                            alt="phone icon"
+                    />
+                  </span>
+                            <span class="phone-number__text">8 800 903 90 90</span>
+                        </a>
+                    </address>
+                    <ul class="socials">
+                        <li class="socials__item">
+                            <a class="socials__link" href="#">
+                                <img
+                                        src="./img/icons/vk.svg"
+                                        alt=""
+                                        class="socials__icon"
+                                />
+                            </a>
+                            <a class="socials__link" href=""></a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link" href="#">
+                                <img src="./img/icons/f.svg" alt="" class="socials__icon"/>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link" href="#">
+                                <img
+                                        src="./img/icons/in.svg"
+                                        alt=""
+                                        class="socials__icon"
+                                />
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link" href="#">
+                                <img
+                                        src="./img/icons/tw.svg"
+                                        alt=""
+                                        class="socials__icon"
+                                />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
         </section>
 
     </div>

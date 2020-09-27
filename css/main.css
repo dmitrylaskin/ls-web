@@ -53,18 +53,30 @@
   justify-content: space-between;
 }
 
-.phone {
+.phone-number {
+  font-size: 24px;
+  text-decoration: none;
   display: flex;
   align-items: center;
 }
-.phone__number {
-  font-size: 22px;
+.phone-number--theme--green {
+  color: #365A49;
 }
-.phone__icon {
+
+.phone-number__icon-elem {
+  width: 12px;
+  height: 12px;
+}
+
+.phone-number__icon {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
   margin-right: 6px;
-  width: 14px;
-  height: 14px;
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%);
+}
+
+.phone-number__text {
+  display: inline-block;
 }
 
 .hero-title {
@@ -102,6 +114,20 @@
 .hero-title__btn:hover {
   background: #365A49;
   color: #fff;
+}
+
+.order-form-btn {
+  background: #365A49;
+  color: #fff;
+}
+.order-form-btn:hover {
+  background: #fff;
+  color: #365A49;
+}
+
+.order-form-reset {
+  background: transparent;
+  color: #365A49;
 }
 
 .leaf {
@@ -445,7 +471,7 @@
   border-radius: 0;
 }
 .radio--checkbox .radio__visible:before {
-  background: url("../img/icons/tick.png") center center no-repeat;
+  background: url("../img/icons/order-page/check.png") center center no-repeat;
 }
 
 .radio__elem {
@@ -526,6 +552,103 @@
 .form__controls {
   display: flex;
   flex-wrap: wrap;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 20px;
+  color: #010101;
+}
+
+.contacts__phone {
+  color: green;
+}
+
+.map-section {
+  position: relative;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../img/icons/map-section/map.jpg") center center/cover no-repeat;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+}
+
+.phone-number {
+  font-size: 24px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.phone-number--theme--green {
+  color: #365A49;
+}
+
+.phone-number__icon-elem {
+  width: 12px;
+  height: 12px;
+}
+
+.phone-number__icon {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+}
+
+.phone-number__text {
+  display: inline-block;
+}
+
+.socials {
+  display: flex;
+}
+
+.socials__item {
+  margin-right: 20px;
+}
+.socials__item:last-child {
+  margin-right: 0;
+}
+
+.socials__link {
+  display: block;
+}
+.socials__link:hover .socials__icon {
+  opacity: 1;
+}
+
+.socials__icon {
+  width: 20px;
+  height: 20px;
+  fill: #000;
+  opacity: 0.3;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 23px 0;
+  background: #fff;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*# sourceMappingURL=main.css.map */
