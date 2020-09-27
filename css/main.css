@@ -329,19 +329,6 @@
   font-size: 18px;
 }
 
-.leaf-4 {
-  position: absolute;
-  top: 172px;
-  left: 0;
-}
-
-.raspberry {
-  z-index: 10;
-  position: absolute;
-  left: 0;
-  bottom: -107px;
-}
-
 .reviews-section {
   background: url("../img/icons/review-page/strawberry.png") right 20px top 10px no-repeat;
   position: relative;
