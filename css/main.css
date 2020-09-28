@@ -80,7 +80,7 @@
 }
 
 .hero-title {
-  width: 353px;
+  width: 46%;
   margin-bottom: 64px;
 }
 
@@ -97,6 +97,7 @@
   line-height: 25px;
   font-weight: 300;
   margin-bottom: 32px;
+  padding-right: 15%;
 }
 
 .btn {
@@ -128,63 +129,44 @@
 .order-form-reset {
   background: transparent;
   color: #365A49;
+  font-weight: 400;
+  text-transform: none;
 }
 
-.leaf {
-  position: absolute;
-  right: 0;
-  top: 0;
+.fixed-menu {
+  position: fixed;
+  top: 20%;
+  right: 4%;
 }
 
-.bars {
-  position: absolute;
-  right: 23px;
-  top: 54px;
+.fixed-menu__item {
+  margin-bottom: 5px;
+}
+.fixed-menu__item--active .fixed-menu__link {
+  border: 1px solid #fff;
 }
 
-.leaf-1 {
-  position: absolute;
-  right: 11px;
-  bottom: 111px;
-}
-
-.leaf-2 {
-  position: absolute;
-  right: 279px;
-  bottom: -31px;
-}
-
-.leaf-3 {
-  position: absolute;
-  bottom: -32px;
-  left: 37px;
-}
-
-.berries-1 {
-  position: absolute;
-  right: 256px;
-  bottom: 36px;
-}
-
-.berries-2 {
-  position: absolute;
-  right: 91px;
-  bottom: -46px;
-}
-
-.sidebar {
-  position: absolute;
-  right: 50px;
-  top: 210px;
-  z-index: 10;
-}
-.sidebar__icon {
-  display: inline-block;
-  width: 9px;
-  height: 9px;
+.fixed-menu__link {
+  display: block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid transparent;
   border-radius: 50%;
-  background: #fff;
+  position: relative;
 }
+.fixed-menu__link:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
 .advantages__icon {
   display: block;
   width: 100%;
@@ -236,6 +218,9 @@
 
 .section--font-color--green {
   color: #1f5c14;
+}
+.section--font-color--green .section__title {
+  color: inherit;
 }
 
 .benefits-section {
