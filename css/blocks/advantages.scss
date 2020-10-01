@@ -1,5 +1,7 @@
 .advantages {
-
+  @include tablets {
+    display: none;
+  }
 }
 .advantages__icon {
   display: block;
@@ -7,19 +9,19 @@
   overflow: hidden;
 }
 .advantages__icon-wrapper {
-  margin-right: 15px;
-  max-height: 40px;
-  max-width: 40px;
+  margin-right: rem(15px);
+  max-height: rem(40px);
+  max-width: rem(40px);
 }
 .advantages__list {
   display: flex;
   justify-content: space-between;
-  width: 500px;
+  width: rem(500px);
 }
 .advantages__item {
   display: flex;
   align-items: center;
 }
 .advantages__text {
-  max-width: 70px;
+  max-width: rem(70px);
 }

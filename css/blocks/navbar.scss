@@ -1,6 +1,10 @@
 .navbar {
   flex: 1;
-  margin-right: 42px;
+  margin-right: rem(42px);
+
+  @include tablets {
+    display: none;
+  }
 
 }
 .navbar__list {

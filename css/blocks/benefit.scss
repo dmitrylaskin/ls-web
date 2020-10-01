@@ -3,34 +3,34 @@
 }
 .benefit__image-wrapper {
   display: inline-block;
-  width: 126px;
-  height: 126px;
+  width: rem(126px);
+  height: rem(126px);
   position: relative;
   background: #f2f5f4;
   border-radius: 50%;
   overflow: hidden;
 }
 .benefit__icon {
-  width: 75px;
-  height: 69px;
+  width: rem(75px);
+  height: rem(69px);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .benefit__title {
-  font-size: 27px;
+  font-size: rem(27px);
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: rem(10px);
   color: #000;
 }
 
 .benefit__image {
-  margin-bottom: 19px;
+  margin-bottom: rem(19px);
 }
 .benefit__desc {
   p {
     color: #666666;
-    font-size: 18px;
+    font-size: rem(18px);
   }
 }

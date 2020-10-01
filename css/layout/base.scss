@@ -1,3 +1,17 @@
+$baseFontSize: 18px;
+$tablets: 768px;
+$phones: 480px;
+
+html {
+    font-size: $baseFontSize;
+
+    @include tablets {
+        font-size: $baseFontSize - 1px;
+    }
+    @include phones {
+        font-size: $baseFontSize - 2px;
+    }
+}
 html, body {
     height: 100%;
 }
@@ -6,7 +20,6 @@ body {
     color: #ffffff;
     font-family: 'AlegreyaSans', Helvetica, sans-serif;
     line-height: 1.42;
-    font-size: 18px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     /*position: relative;*/
@@ -18,23 +31,17 @@ a {
 .wrapper {
     width: 100%;
     overflow: hidden;
-    min-width: 960px;
+    //min-width: 960px;
     min-height: 100%;
     /*display: flex;*/
     /*flex-direction: column;*/
     position: relative;
 }
 
-
-
-/*.wrapper__content {*/
-/*    flex: 1;*/
-/*}*/
-
 .container {
-    width: 940px;
+    width: 95%;
+    max-width: 940px;
     margin: 0 auto;
-    
 }
 
 .why-section {

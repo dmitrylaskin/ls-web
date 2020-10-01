@@ -1,26 +1,91 @@
 @import './layout/fonts.css';
-@import './layout/base.css';
 @import './layout/reset_styles.css';
 @import './layout/normolize.css';
+html {
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  /*background-color: #001821;*/
+  color: #ffffff;
+  font-family: "AlegreyaSans", Helvetica, sans-serif;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /*position: relative;*/
+}
+
+a {
+  color: #ffffff;
+}
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  min-height: 100%;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  position: relative;
+}
+
+.container {
+  width: 95%;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.why-section {
+  position: relative;
+}
+
+.order-section {
+  position: relative;
+  background: #F8FAF9;
+}
+
 .hero {
   background: url("../img/icons/main-page/tracery.png") right bottom no-repeat;
   background-color: #61C4D9;
   position: relative;
   height: 100vh;
-  min-height: 650px;
+  min-height: 36.1111111111rem;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    background-position: right bottom 62%;
+  }
 }
 .hero:before {
   position: absolute;
   content: url("../img/icons/main-page/leaf3.png");
-  bottom: -40px;
+  bottom: -2.2222222222rem;
   left: 2%;
 }
 .hero:after {
   position: absolute;
   content: url("../img/icons/main-page/berries.png");
-  bottom: -40px;
+  bottom: -2.2222222222rem;
   right: 0;
+}
+@media screen and (max-width: 768px) {
+  .hero:before, .hero:after {
+    display: none;
+  }
 }
 
 .hero__container {
@@ -28,24 +93,34 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 24px 0 50px 0;
+  padding: 1.3333333333rem 0 2.7777777778rem 0;
   background: url("../img/icons/main-page/bars.png") right center/50% auto no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .hero__container {
+    background: none;
+  }
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 4.4444444444rem;
 }
 
 .logo {
-  margin-right: 42px;
+  margin-right: 2.3333333333rem;
 }
 
 .navbar {
   flex: 1;
-  margin-right: 42px;
+  margin-right: 2.3333333333rem;
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
 }
 
 .navbar__list {
@@ -54,7 +129,7 @@
 }
 
 .phone-number {
-  font-size: 24px;
+  font-size: 1.3333333333rem;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -63,16 +138,22 @@
   color: #365A49;
 }
 
+@media screen and (max-width: 768px) {
+  .header__phone-number {
+    display: none;
+  }
+}
+
 .phone-number__icon-elem {
-  width: 12px;
-  height: 12px;
+  width: 0.6666666667rem;
+  height: 0.6666666667rem;
 }
 
 .phone-number__icon {
   display: inline-block;
-  width: 12px;
-  height: 12px;
-  margin-right: 6px;
+  width: 0.6666666667rem;
+  height: 0.6666666667rem;
+  margin-right: 0.3333333333rem;
 }
 
 .phone-number__text {
@@ -81,29 +162,48 @@
 
 .hero-title {
   width: 46%;
-  margin-bottom: 64px;
+  margin-bottom: 3.5555555556rem;
+}
+@media screen and (max-width: 768px) {
+  .hero-title {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .hero-title:before {
+    content: url("../img/icons/main-page/bars-full-pic.png");
+  }
 }
 
 .hero-title__title {
-  margin: 0 0 17px 0;
-  font-size: 48px;
-  line-height: 58px;
+  margin: 0 0 0.9444444444rem 0;
+  font-size: 2.6666666667rem;
+  line-height: 3.2222222222rem;
   text-transform: uppercase;
   font-weight: 700;
 }
 
 .hero-title__subtitle {
-  font-size: 21px;
-  line-height: 25px;
+  font-size: 1.1666666667rem;
+  line-height: 1.3888888889rem;
   font-weight: 300;
-  margin-bottom: 32px;
+  margin-bottom: 1.7777777778rem;
   padding-right: 15%;
+}
+@media screen and (max-width: 768px) {
+  .hero-title__subtitle {
+    padding: 0 25%;
+  }
 }
 
 .btn {
   display: inline-block;
-  padding: 20px 40px;
-  border-radius: 100px;
+  padding: 1.1111111111rem 2.2222222222rem;
+  border-radius: 5.5555555556rem;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -140,17 +240,17 @@
 }
 
 .fixed-menu__item {
-  margin-bottom: 5px;
+  margin-bottom: 0.2777777778rem;
 }
 .fixed-menu__item--active .fixed-menu__link {
-  border: 1px solid #fff;
+  border: 0.0555555556rem solid #fff;
 }
 
 .fixed-menu__link {
   display: block;
-  width: 18px;
-  height: 18px;
-  border: 1px solid transparent;
+  width: 1rem;
+  height: 1rem;
+  border: 0.0555555556rem solid transparent;
   border-radius: 50%;
   position: relative;
 }
@@ -162,9 +262,15 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background: #fff;
-  width: 6px;
-  height: 6px;
+  width: 0.3333333333rem;
+  height: 0.3333333333rem;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .advantages {
+    display: none;
+  }
 }
 
 .advantages__icon {
@@ -174,15 +280,15 @@
 }
 
 .advantages__icon-wrapper {
-  margin-right: 15px;
-  max-height: 40px;
-  max-width: 40px;
+  margin-right: 0.8333333333rem;
+  max-height: 2.2222222222rem;
+  max-width: 2.2222222222rem;
 }
 
 .advantages__list {
   display: flex;
   justify-content: space-between;
-  width: 500px;
+  width: 27.7777777778rem;
 }
 
 .advantages__item {
@@ -191,21 +297,21 @@
 }
 
 .advantages__text {
-  max-width: 70px;
+  max-width: 3.8888888889rem;
 }
 
 .section {
   height: 100vh;
-  min-height: 650px;
+  min-height: 36.1111111111rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .section__title {
-  font-size: 48px;
+  font-size: 2.6666666667rem;
   font-weight: bold;
-  margin-bottom: 32px;
+  margin-bottom: 1.7777777778rem;
   text-align: center;
   text-transform: uppercase;
   color: #000;
@@ -230,7 +336,7 @@
 .benefits-section:before {
   content: url("../img/icons/why-page/raspberry.png");
   position: absolute;
-  bottom: -80px;
+  bottom: -4.4444444444rem;
   left: 0;
 }
 
@@ -240,8 +346,8 @@
 
 .benefit__image-wrapper {
   display: inline-block;
-  width: 126px;
-  height: 126px;
+  width: 7rem;
+  height: 7rem;
   position: relative;
   background: #f2f5f4;
   border-radius: 50%;
@@ -249,8 +355,8 @@
 }
 
 .benefit__icon {
-  width: 75px;
-  height: 69px;
+  width: 4.1666666667rem;
+  height: 3.8333333333rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -258,19 +364,19 @@
 }
 
 .benefit__title {
-  font-size: 27px;
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 0.5555555556rem;
   color: #000;
 }
 
 .benefit__image {
-  margin-bottom: 19px;
+  margin-bottom: 1.0555555556rem;
 }
 
 .benefit__desc p {
   color: #666666;
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 .benefits {
@@ -285,7 +391,7 @@
 .benefits__item:before {
   content: url("../img/icons/why-page/separator.png");
   position: absolute;
-  top: 30px;
+  top: 1.6666666667rem;
   right: 0;
   transform: translateX(50%);
 }
@@ -301,54 +407,54 @@
 
 .headline {
   text-align: center;
-  margin-bottom: 51px;
+  margin-bottom: 2.8333333333rem;
 }
 
 .headline__title {
-  margin-bottom: 7px;
+  margin-bottom: 0.3888888889rem;
 }
 
 .headline__subtitle {
   padding: 0 26%;
   color: #666666;
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 .reviews-section {
-  background: url("../img/icons/review-page/strawberry.png") right 20px top 10px no-repeat;
+  background: url("../img/icons/review-page/strawberry.png") right 1.1111111111rem top 0.5555555556rem no-repeat;
   position: relative;
 }
 .reviews-section:before {
   content: url("../img/icons/review-page/leaf.png");
   position: absolute;
-  bottom: -162px;
+  bottom: -9rem;
   left: 0;
 }
 .reviews-section:after {
   content: url("../img/icons/review-page/berries.png");
   position: absolute;
-  bottom: -90px;
+  bottom: -5rem;
   left: 0;
 }
 
 .reviews__display {
-  padding: 50px 45px 34px;
+  padding: 2.7777777778rem 2.5rem 1.8888888889rem;
   background: #f8faf9 url("../img/icons/review-page/flowers.png") right top no-repeat;
-  margin-bottom: 20px;
+  margin-bottom: 1.1111111111rem;
   overflow: hidden;
   position: relative;
 }
 .reviews__display:before {
   content: "";
   display: block;
-  width: 90px;
-  height: 90px;
+  width: 5rem;
+  height: 5rem;
   background: #fff;
   border-radius: 50%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: -65px;
+  top: -3.6111111111rem;
 }
 
 .reviews__display-inner {
@@ -356,8 +462,8 @@
 }
 
 .reviews__avatar {
-  width: 254px;
-  height: 260px;
+  width: 14.1111111111rem;
+  height: 14.4444444444rem;
 }
 
 .reviews__avatar-img {
@@ -368,28 +474,28 @@
 
 .reviews__content {
   flex: 1;
-  margin-left: 17px;
+  margin-left: 0.9444444444rem;
   padding-right: 10%;
-  padding-top: 8px;
+  padding-top: 0.4444444444rem;
 }
 
 .reviews__title {
-  font-size: 30px;
+  font-size: 1.6666666667rem;
   font-weight: bold;
-  margin-bottom: 22px;
+  margin-bottom: 1.2222222222rem;
   color: black;
 }
 
 .reviews__text {
-  margin-bottom: 36px;
+  margin-bottom: 2rem;
 }
 .reviews__text p {
   color: #666666;
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 .reviews__author {
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: bold;
   color: black;
 }
@@ -400,9 +506,9 @@
 }
 
 .interactive-avatar {
-  width: 80px;
-  height: 80px;
-  border: 6px solid transparent;
+  width: 4.4444444444rem;
+  height: 4.4444444444rem;
+  border: 0.3333333333rem solid transparent;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
@@ -429,7 +535,7 @@
 
 .order-section {
   background: url("../img/icons/order-page/blackberry.png") bottom 14% left 2% no-repeat, url("../img/icons/order-page/leaf.png") right 1% bottom 16% no-repeat, url("../img/icons/order-page/order-bg.jpg") center center/cover no-repeat;
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 .radio {
@@ -437,7 +543,7 @@
   cursor: pointer;
   user-select: none;
   align-items: center;
-  margin-right: 22px;
+  margin-right: 1.2222222222rem;
 }
 .radio--checkbox .radio__visible {
   border-radius: 0;
@@ -454,17 +560,17 @@
 }
 
 .radio__visible {
-  width: 26px;
-  height: 26px;
+  width: 1.4444444444rem;
+  height: 1.4444444444rem;
   position: relative;
   border-radius: 50%;
   background: #fff;
-  margin-right: 10px;
+  margin-right: 0.5555555556rem;
 }
 .radio__visible:before {
   content: "";
-  width: 14px;
-  height: 14px;
+  width: 0.7777777778rem;
+  height: 0.7777777778rem;
   background: #365a49;
   border-radius: 50%;
   position: absolute;
@@ -475,11 +581,11 @@
 }
 
 .form__controls {
-  margin-bottom: 8px;
+  margin-bottom: 0.4444444444rem;
 }
 
 .form__btns {
-  margin-top: 40px;
+  margin-top: 2.2222222222rem;
 }
 
 .form {
@@ -488,7 +594,7 @@
 
 .form__col {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 1.1111111111rem;
 }
 .form__col:last-child {
   margin-right: 0;
@@ -496,12 +602,12 @@
 
 .form__row {
   display: flex;
-  margin-bottom: 18px;
+  margin-bottom: 1rem;
 }
 
 .form__block {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 1.1111111111rem;
 }
 .form__block:last-child {
   margin-right: 0;
@@ -509,11 +615,11 @@
 
 .form__input {
   width: 100%;
-  padding: 16px 11px;
-  border: solid 3px transparent;
+  padding: 0.8888888889rem 0.6111111111rem;
+  border: solid 0.1666666667rem transparent;
 }
 .form__input--textarea {
-  height: 180px;
+  height: 10rem;
   resize: none;
 }
 .form__input:focus {
@@ -528,7 +634,7 @@
 
 .contacts {
   font-style: normal;
-  font-size: 20px;
+  font-size: 1.1111111111rem;
   color: #010101;
 }
 
@@ -558,7 +664,7 @@
 }
 
 .phone-number {
-  font-size: 24px;
+  font-size: 1.3333333333rem;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -567,16 +673,22 @@
   color: #365A49;
 }
 
+@media screen and (max-width: 768px) {
+  .header__phone-number {
+    display: none;
+  }
+}
+
 .phone-number__icon-elem {
-  width: 12px;
-  height: 12px;
+  width: 0.6666666667rem;
+  height: 0.6666666667rem;
 }
 
 .phone-number__icon {
   display: inline-block;
-  width: 12px;
-  height: 12px;
-  margin-right: 6px;
+  width: 0.6666666667rem;
+  height: 0.6666666667rem;
+  margin-right: 0.3333333333rem;
 }
 
 .phone-number__text {
@@ -588,7 +700,7 @@
 }
 
 .socials__item {
-  margin-right: 20px;
+  margin-right: 1.1111111111rem;
 }
 .socials__item:last-child {
   margin-right: 0;
@@ -602,8 +714,8 @@
 }
 
 .socials__icon {
-  width: 20px;
-  height: 20px;
+  width: 1.1111111111rem;
+  height: 1.1111111111rem;
   fill: #000;
   opacity: 0.3;
 }
@@ -613,7 +725,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 23px 0;
+  padding: 1.2777777778rem 0;
   background: #fff;
 }
 

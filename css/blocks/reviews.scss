@@ -1,21 +1,21 @@
 .reviews__display {
-  padding: 50px 45px 34px;
+  padding: rem(50px) rem(45px) rem(34px);
   background: #f8faf9 url("../img/icons/review-page/flowers.png") right top no-repeat;
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
   overflow: hidden;
   position: relative;
   
   &:before {
     content: "";
     display: block;
-    width: 90px;
-    height: 90px;
+    width: rem(90px);
+    height: rem(90px);
     background: #fff;
     border-radius: 50%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: -65px;
+    top: rem(-65px);
   }
 }
 
@@ -24,8 +24,8 @@
 }
 
 .reviews__avatar {
-  width: 254px;
-  height: 260px;
+  width: rem(254px);
+  height: rem(260px);
 }
 
 .reviews__avatar-img {
@@ -36,28 +36,28 @@
 
 .reviews__content {
   flex: 1;
-  margin-left: 17px;
+  margin-left: rem(17px);
   padding-right: 10%;
-  padding-top: 8px;
+  padding-top: rem(8px);
 }
 
 .reviews__title {
-  font-size: 30px;
+  font-size: rem(30px);
   font-weight: bold;
-  margin-bottom: 22px;
+  margin-bottom: rem(22px);
   color: black;
 }
 
 .reviews__text {
-  margin-bottom: 36px;
+  margin-bottom: rem(36px);
   p {
     color: #666666;
-    font-size: 18px;
+    font-size: rem(18px);
   }
 }
 
 .reviews__author {
-  font-size: 18px;
+  font-size: rem(18px);
   font-weight: bold;
   color: black;
 }

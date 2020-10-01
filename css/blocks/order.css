@@ -1,3 +1,36 @@
+.order {
+  display: flex;
+}
 
+.order__img-wrapper {
+  display: inline-block;
+  width: rem(363px);
+  height: rem(386px);
+  position: relative;
+  border: rem(1px) dashed red;
+}
+
+.order__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.order__dropdown {
+  width: rem(90px);
+  height: rem(90px);
+  background: #86C3D7;
+}
+
+.order__title {
+  font-weight: 700;
+  font-size: rem(36px);
+  line-height: rem(43px);
+  color: #292929;
+}
+
+.order__text {
+  color: #666666;
+}
 
 /*# sourceMappingURL=order.css.map */

@@ -1,7 +1,7 @@
 .btn {
   display: inline-block;
-  padding: 20px 40px;
-  border-radius: 100px;
+  padding: rem(20px) rem(40px);
+  border-radius: rem(100px);
 
   text-transform: uppercase;
   font-weight: 700;

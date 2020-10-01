@@ -5,7 +5,7 @@
   &:before {
     content: url("../img/icons/why-page/raspberry.png");
     position: absolute;
-    bottom: -80px;
+    bottom: rem(-80px);
     left: 0;
   }
 }

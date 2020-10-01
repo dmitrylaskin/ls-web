@@ -1,17 +1,17 @@
 .reviews-section {
-  background: url("../img/icons/review-page/strawberry.png") right 20px top 10px no-repeat;
+  background: url("../img/icons/review-page/strawberry.png") right rem(20px) top rem(10px) no-repeat;
   position: relative;
   &:before {
     content: url("../img/icons/review-page/leaf.png");
     position: absolute;
-    bottom: -162px;
+    bottom: rem(-162px);
     left: 0;
   }
 
   &:after {
     content: url("../img/icons/review-page/berries.png");
     position: absolute;
-    bottom: -90px;
+    bottom: rem(-90px);
     left: 0;
   }
 }

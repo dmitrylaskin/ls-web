@@ -4,10 +4,10 @@
   right: 4%;
 }
 .fixed-menu__item {
-  margin-bottom: 5px;
+  margin-bottom: rem(5px);
   &--active {
     .fixed-menu__link {
-      border: 1px solid #fff;
+      border: rem(1px) solid #fff;
     }
   }
 
@@ -15,9 +15,9 @@
 
 .fixed-menu__link {
   display: block;
-  width: 18px;
-  height: 18px;
-  border: 1px solid transparent;
+  width: rem(18px);
+  height: rem(18px);
+  border: rem(1px) solid transparent;
   border-radius: 50%;
   position: relative;
 
@@ -30,8 +30,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background: #fff;
-    width: 6px;
-    height: 6px;
+    width: rem(6px);
+    height: rem(6px);
     border-radius: 50%;
 
   }

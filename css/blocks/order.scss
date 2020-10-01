@@ -4,10 +4,10 @@
 
 .order__img-wrapper {
   display: inline-block;
-  width: 363px;
-  height: 386px;
+  width: rem(363px);
+  height: rem(386px);
   position: relative;
-  border: 1px dashed red;
+  border: rem(1px) dashed red;
 
 
 }
@@ -19,14 +19,14 @@
 
 }
 .order__dropdown {
-  width: 90px;
-  height: 90px;
+  width: rem(90px);
+  height: rem(90px);
   background: #86C3D7;
 }
 .order__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 43px;
+  font-size: rem(36px);
+  line-height: rem(43px);
   color: #292929;
 }
 .order__text {

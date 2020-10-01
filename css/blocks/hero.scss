@@ -3,21 +3,32 @@
   background-color: #61C4D9;
   position: relative;
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
   position: relative;
+
+  @include tablets {
+    background-position: right bottom 62%;
+  }
 
   &:before {
     position: absolute;
     content: url("../img/icons/main-page/leaf3.png");
-    bottom: -40px;
+    bottom: rem(-40px);
     left: 2%;
   }
   &:after {
     position: absolute;
     content: url("../img/icons/main-page/berries.png");
-    bottom: -40px;
+    bottom: rem(-40px);
     right: 0;
   }
+  &:before, &:after {
+    @include tablets {
+      display: none;
+    }
+  }
+
+
 }
 
 
@@ -26,6 +37,10 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 24px 0 50px 0;
+  padding: rem(24px) 0 rem(50px) 0;
   background: url("../img/icons/main-page/bars.png") right center / 50% auto no-repeat;
+
+  @include tablets {
+    background: none;
+  }
 }
