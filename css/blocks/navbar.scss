@@ -1,6 +1,8 @@
 .navbar {
   flex: 1;
   margin-right: rem(42px);
+  padding-top: rem(4px);
+
 
   @include tablets {
     display: none;
@@ -9,7 +11,14 @@
 }
 .navbar__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  white-space: nowrap;
+  flex-wrap: wrap;
 
-
+}
+.navbar__item {
+  margin-right: rem(27px);
+}
+.navbar__item:last-child {
+  margin-right: 0;
 }

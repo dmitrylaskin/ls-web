@@ -1,6 +1,9 @@
 .benefits-section {
   position: relative;
   background: url("../img/icons/why-page/leaf4.png") left top 57% no-repeat;
+  @include tablets {
+    background-position: left top 5%;
+  }
 
   &:before {
     content: url("../img/icons/why-page/raspberry.png");

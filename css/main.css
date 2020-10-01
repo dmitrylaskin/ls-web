@@ -105,7 +105,7 @@ a {
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 4.4444444444rem;
 }
 
@@ -116,6 +116,7 @@ a {
 .navbar {
   flex: 1;
   margin-right: 2.3333333333rem;
+  padding-top: 0.2222222222rem;
 }
 @media screen and (max-width: 768px) {
   .navbar {
@@ -125,7 +126,17 @@ a {
 
 .navbar__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  white-space: nowrap;
+  flex-wrap: wrap;
+}
+
+.navbar__item {
+  margin-right: 1.5rem;
+}
+
+.navbar__item:last-child {
+  margin-right: 0;
 }
 
 .phone-number {
@@ -158,6 +169,7 @@ a {
 
 .phone-number__text {
   display: inline-block;
+  white-space: nowrap;
 }
 
 .hero-title {
@@ -300,6 +312,26 @@ a {
   max-width: 3.8888888889rem;
 }
 
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 20px;
+}
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: inline-flex;
+  }
+}
+
+.hamburger__item {
+  display: block;
+  border-radius: 10px;
+  height: 4px;
+  background: #fff;
+}
+
 .section {
   height: 100vh;
   min-height: 36.1111111111rem;
@@ -332,6 +364,11 @@ a {
 .benefits-section {
   position: relative;
   background: url("../img/icons/why-page/leaf4.png") left top 57% no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .benefits-section {
+    background-position: left top 5%;
+  }
 }
 .benefits-section:before {
   content: url("../img/icons/why-page/raspberry.png");
@@ -460,10 +497,24 @@ a {
 .reviews__display-inner {
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .reviews__display-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
 
 .reviews__avatar {
   width: 14.1111111111rem;
   height: 14.4444444444rem;
+}
+@media screen and (max-width: 768px) {
+  .reviews__avatar {
+    width: 7.2222222222rem;
+    height: 7.2222222222rem;
+    margin-bottom: 1.6666666667rem;
+  }
 }
 
 .reviews__avatar-img {
@@ -478,12 +529,23 @@ a {
   padding-right: 10%;
   padding-top: 0.4444444444rem;
 }
+@media screen and (max-width: 768px) {
+  .reviews__content {
+    padding-right: 0;
+    margin-left: 0;
+  }
+}
 
 .reviews__title {
   font-size: 1.6666666667rem;
   font-weight: bold;
   margin-bottom: 1.2222222222rem;
   color: black;
+}
+@media screen and (max-width: 768px) {
+  .reviews__title {
+    margin-bottom: 0.8888888889rem;
+  }
 }
 
 .reviews__text {
@@ -492,6 +554,11 @@ a {
 .reviews__text p {
   color: #666666;
   font-size: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .reviews__text {
+    margin-bottom: 0.8888888889rem;
+  }
 }
 
 .reviews__author {
@@ -693,6 +760,7 @@ a {
 
 .phone-number__text {
   display: inline-block;
+  white-space: nowrap;
 }
 
 .socials {
