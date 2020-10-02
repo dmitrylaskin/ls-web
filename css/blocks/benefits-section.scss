@@ -4,11 +4,18 @@
   @include tablets {
     background-position: left top 5%;
   }
+  @include phones {
+    background: none;
+  }
 
   &:before {
     content: url("../img/icons/why-page/raspberry.png");
     position: absolute;
     bottom: rem(-80px);
     left: 0;
+
+    @include phones {
+      display: none;
+    }
   }
 }

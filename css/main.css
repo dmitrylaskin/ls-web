@@ -187,7 +187,11 @@ a {
     text-align: center;
   }
   .hero-title:before {
-    content: url("../img/icons/main-page/bars-full-pic.png");
+    content: "";
+    width: 17.5555555556rem;
+    height: 18.3333333333rem;
+    background: url("../img/icons/main-page/bars-full-pic.png") center center/contain no-repeat;
+    margin-bottom: 0.8888888889rem;
   }
 }
 
@@ -209,6 +213,11 @@ a {
 @media screen and (max-width: 768px) {
   .hero-title__subtitle {
     padding: 0 25%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero-title__subtitle {
+    padding: 0 15%;
   }
 }
 
@@ -249,6 +258,11 @@ a {
   position: fixed;
   top: 20%;
   right: 4%;
+}
+@media screen and (max-width: 768px) {
+  .fixed-menu {
+    display: none;
+  }
 }
 
 .fixed-menu__item {
@@ -370,15 +384,31 @@ a {
     background-position: left top 5%;
   }
 }
+@media screen and (max-width: 480px) {
+  .benefits-section {
+    background: none;
+  }
+}
 .benefits-section:before {
   content: url("../img/icons/why-page/raspberry.png");
   position: absolute;
   bottom: -4.4444444444rem;
   left: 0;
 }
+@media screen and (max-width: 480px) {
+  .benefits-section:before {
+    display: none;
+  }
+}
 
 .benefit {
   text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .benefit {
+    display: flex;
+    text-align: left;
+  }
 }
 
 .benefit__image-wrapper {
@@ -410,14 +440,28 @@ a {
 .benefit__image {
   margin-bottom: 1.0555555556rem;
 }
+@media screen and (max-width: 480px) {
+  .benefit__image {
+    margin-bottom: 0;
+  }
+}
 
 .benefit__desc p {
   color: #666666;
   font-size: 1rem;
 }
 
+.benefit__text {
+  margin-left: 1.1111111111rem;
+}
+
 .benefits {
   display: flex;
+}
+@media screen and (max-width: 480px) {
+  .benefits {
+    flex-direction: column;
+  }
 }
 
 .benefits__item {
@@ -425,12 +469,23 @@ a {
   padding: 0 3%;
   position: relative;
 }
+@media screen and (max-width: 480px) {
+  .benefits__item {
+    padding: 0;
+    margin-bottom: 1.9444444444rem;
+  }
+}
 .benefits__item:before {
   content: url("../img/icons/why-page/separator.png");
   position: absolute;
   top: 1.6666666667rem;
   right: 0;
   transform: translateX(50%);
+}
+@media screen and (max-width: 480px) {
+  .benefits__item:before {
+    display: none;
+  }
 }
 .benefits__item:first-child {
   padding-left: 0;
@@ -455,6 +510,11 @@ a {
   padding: 0 26%;
   color: #666666;
   font-size: 1rem;
+}
+@media screen and (max-width: 480px) {
+  .headline__subtitle {
+    padding: 0;
+  }
 }
 
 .reviews-section {
@@ -575,10 +635,15 @@ a {
 .interactive-avatar {
   width: 4.4444444444rem;
   height: 4.4444444444rem;
-  border: 0.3333333333rem solid transparent;
+  border: 0.3rem solid transparent;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+}
+@media screen and (max-width: 480px) {
+  .interactive-avatar {
+    border: 0.26rem solid transparent;
+  }
 }
 .interactive-avatar--active {
   border-color: #0f5a47;
@@ -604,6 +669,11 @@ a {
   background: url("../img/icons/order-page/blackberry.png") bottom 14% left 2% no-repeat, url("../img/icons/order-page/leaf.png") right 1% bottom 16% no-repeat, url("../img/icons/order-page/order-bg.jpg") center center/cover no-repeat;
   font-size: 1rem;
 }
+@media screen and (max-width: 768px) {
+  .order-section {
+    background: url("../img/icons/order-page/order-bg.jpg") center center/cover no-repeat;
+  }
+}
 
 .radio {
   display: flex;
@@ -612,11 +682,21 @@ a {
   align-items: center;
   margin-right: 1.2222222222rem;
 }
+@media screen and (max-width: 480px) {
+  .radio {
+    margin-bottom: 0.5555555556rem;
+  }
+}
 .radio--checkbox .radio__visible {
-  border-radius: 0;
+  border-radius: 5px;
 }
 .radio--checkbox .radio__visible:before {
   background: url("../img/icons/order-page/check.png") center center no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .radio--checkbox {
+    padding-top: 0.9444444444rem;
+  }
 }
 
 .radio__elem {
@@ -658,6 +738,17 @@ a {
 .form {
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .form {
+    flex-direction: column;
+    padding: 0 16%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form {
+    padding: 0;
+  }
+}
 
 .form__col {
   flex: 1;
@@ -665,6 +756,11 @@ a {
 }
 .form__col:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .form__col {
+    margin-right: 0;
+  }
 }
 
 .form__row {
@@ -698,11 +794,29 @@ a {
   display: flex;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 480px) {
+  .form__controls {
+    justify-content: center;
+  }
+}
+
+.form__btns {
+  display: flex;
+  justify-content: center;
+}
 
 .contacts {
   font-style: normal;
   font-size: 1.1111111111rem;
   color: #010101;
+}
+@media screen and (max-width: 480px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.5555555556rem;
+  }
 }
 
 .contacts__phone {
@@ -801,6 +915,11 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .footer__container {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

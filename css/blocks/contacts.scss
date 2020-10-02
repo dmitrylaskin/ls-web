@@ -2,6 +2,12 @@
   font-style: normal;
   font-size: rem(20px);
   color: #010101;
+  @include phones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: rem(10px);
+  }
 }
 
 .contacts__phone {

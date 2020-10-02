@@ -1,14 +1,18 @@
 .interactive-avatar {
   width: rem(80px);
   height: rem(80px);
-  border: rem(6px) solid transparent;
+  border: 0.3rem solid transparent;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+  @include phones {
+    border: 0.26rem solid transparent;
+  }
 
   &--active {
     border-color: #0f5a47;
   }
+
 }
 
 .interactive-avatar__link {

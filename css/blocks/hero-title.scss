@@ -11,7 +11,11 @@
     justify-content: center;
     text-align: center;
     &:before {
-      content: url("../img/icons/main-page/bars-full-pic.png");
+      content: '';
+      width: rem(316px);
+      height: rem(330px);
+      background: url("../img/icons/main-page/bars-full-pic.png") center center / contain no-repeat;
+      margin-bottom: rem(16px);
     }
   }
 
@@ -32,5 +36,8 @@
 
   @include tablets {
     padding: 0 25%;
+  }
+  @include phones {
+    padding: 0 15%;
   }
 }

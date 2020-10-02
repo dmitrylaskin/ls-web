@@ -4,14 +4,20 @@
   user-select: none;
   align-items: center;
   margin-right: rem(22px);
+  @include phones {
+    margin-bottom: rem(10px);
+  }
 
   &--checkbox {
     .radio__visible {
-      border-radius: 0;
+      border-radius: 5px;
 
       &:before {
         background: url("../img/icons/order-page/check.png") center center no-repeat;
       }
+    }
+    @include tablets {
+      padding-top: rem(17px);
     }
   }
 }
