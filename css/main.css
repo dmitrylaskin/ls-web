@@ -309,6 +309,7 @@ a {
   margin-right: 0.8333333333rem;
   max-height: 2.2222222222rem;
   max-width: 2.2222222222rem;
+  overflow: hidden;
 }
 
 .advantages__list {
@@ -324,6 +325,12 @@ a {
 
 .advantages__text {
   max-width: 3.8888888889rem;
+}
+
+.advantages__svg-icon {
+  width: 40px;
+  height: 40px;
+  fill: #fff;
 }
 
 .hamburger {
@@ -898,7 +905,6 @@ a {
 .socials__icon {
   width: 1.1111111111rem;
   height: 1.1111111111rem;
-  fill: #000;
   opacity: 0.3;
 }
 

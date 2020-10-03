@@ -12,6 +12,7 @@
   margin-right: rem(15px);
   max-height: rem(40px);
   max-width: rem(40px);
+  overflow: hidden;
 }
 .advantages__list {
   display: flex;
@@ -24,4 +25,9 @@
 }
 .advantages__text {
   max-width: rem(70px);
+}
+.advantages__svg-icon {
+  width: 40px;
+  height: 40px;
+  fill: #fff;
 }
