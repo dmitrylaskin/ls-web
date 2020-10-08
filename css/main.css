@@ -928,4 +928,136 @@ a {
   }
 }
 
+.arrow {
+  width: 0.7777777778rem;
+  height: 1.5rem;
+}
+
+.arrow--left {
+  position: absolute;
+  top: 41%;
+  left: 5%;
+}
+
+.arrow--right {
+  position: absolute;
+  top: 41%;
+  right: 5%;
+}
+
+.arrow--left-icon {
+  transform: rotate(180deg);
+}
+
+.slider-section {
+  border: 2px dashed red;
+  background-color: #F8FAF9;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  background: url("../img/icons/order-page/bars1.png") 0 50%/50% auto no-repeat;
+}
+
+.slider-desc {
+  max-width: 20.4444444444rem;
+}
+
+.slider-desc__title {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1.3888888889rem;
+}
+
+.slider-desc__subtitle {
+  color: #666666;
+  margin-bottom: 1.3888888889rem;
+}
+
+.slider-desc__props {
+  max-width: 13.0555555556rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.3888888889rem;
+}
+
+.slider-desc__props-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-desc__props-name {
+  color: #666666;
+}
+
+.slider-desc__props-value {
+  color: #000;
+  font-weight: 700;
+}
+
+.slider-desc__price {
+  display: inline-block;
+  font-size: 3.3333333333rem;
+  color: #151515;
+}
+
+.dropdown__icon-wrapper {
+  background: #86C3D7;
+  width: 5rem;
+  height: 5rem;
+  padding: 1.1111111111rem;
+}
+
+.dropdown__icon {
+  width: 2.5555555556rem;
+  height: 2.5555555556rem;
+  margin-bottom: 0.2777777778rem;
+}
+
+.dropdown__item-icon-wrapper {
+  width: 1.1111111111rem;
+  height: 1.1111111111rem;
+}
+
+.dropdown__item-icon {
+  width: 100%;
+}
+
+.dropdown {
+  position: relative;
+  width: 5rem;
+}
+.dropdown:hover .dropdown__menu {
+  right: -15.1666666667rem;
+  top: 0;
+  opacity: 1;
+}
+
+.dropdown__item {
+  display: flex;
+  margin-bottom: 1.6666666667rem;
+}
+
+.dropdown__item-name {
+  flex: 1;
+  padding-left: 1.3888888889rem;
+}
+
+.dropdown__menu {
+  padding: 1.6666666667rem;
+  color: #000;
+  width: 15.1666666667rem;
+  height: 19.1111111111rem;
+  background: lightgrey;
+  position: absolute;
+  right: 555.5rem;
+  transition: opacity 0.2s;
+  opacity: 0;
+}
+
 /*# sourceMappingURL=main.css.map */

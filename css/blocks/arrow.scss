@@ -1,0 +1,22 @@
+.arrow {
+  width: rem(14px);
+  height: rem(27px);
+
+}
+.arrow--left {
+  position: absolute;
+  top: 41%;
+  left: 5%;
+}
+.arrow--right {
+  position: absolute;
+  top: 41%;
+  right: 5%;
+}
+.arrow--left-icon {
+  transform: rotate(180deg);
+
+}
+.arrow--right-icon {
+
+}
