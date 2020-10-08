@@ -1,12 +1,14 @@
 .arrow {
   width: rem(14px);
   height: rem(27px);
+  cursor: pointer;
 
 }
 .arrow--left {
   position: absolute;
   top: 41%;
   left: 5%;
+  z-index: 10;
 }
 .arrow--right {
   position: absolute;
