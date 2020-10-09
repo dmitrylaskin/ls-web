@@ -57,6 +57,10 @@ a {
   background: #F8FAF9;
 }
 
+.body--active-menu {
+  overflow: hidden;
+}
+
 .hero {
   background: url("../img/icons/main-page/tracery.png") right bottom no-repeat;
   background-color: #61C4D9;
@@ -137,6 +141,30 @@ a {
 
 .navbar__item:last-child {
   margin-right: 0;
+}
+
+.navbar--burger {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  margin: 0;
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+}
+.navbar--burger .navbar__list {
+  flex-direction: column;
+}
+.navbar--burger .navbar__item {
+  margin: 0 0 1.1111111111rem 0;
+  text-align: center;
+}
+.navbar--burger .navbar__link {
+  font-size: 2.2222222222rem;
 }
 
 .phone-number {
@@ -339,6 +367,7 @@ a {
   justify-content: space-between;
   width: 24px;
   height: 20px;
+  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
   .hamburger {
@@ -351,6 +380,18 @@ a {
   border-radius: 10px;
   height: 4px;
   background: #fff;
+}
+
+.close-icon-wrapper {
+  display: none;
+  width: 1.3888888889rem;
+  height: 1.3888888889rem;
+  overflow: hidden;
+}
+
+.close-icon {
+  width: 100%;
+  height: 100%;
 }
 
 .section {

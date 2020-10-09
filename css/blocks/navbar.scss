@@ -18,7 +18,37 @@
 }
 .navbar__item {
   margin-right: rem(27px);
+
 }
 .navbar__item:last-child {
   margin-right: 0;
+}
+.navbar--burger {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.9);
+  margin: 0;
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+
+
+  .navbar__list {
+    flex-direction: column;
+  }
+  .navbar__item {
+    margin: 0 0 rem(20px) 0;
+    text-align: center;
+  }
+  .navbar__link {
+    font-size: rem(40px);
+  }
+
+
+
+
 }
