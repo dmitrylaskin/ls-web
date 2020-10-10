@@ -12,6 +12,10 @@
   &:hover {
     background: #60AACC;
   }
+
+  @include tablets {
+    display: none;
+  }
 }
 .dropdown__title {
   text-transform: uppercase;

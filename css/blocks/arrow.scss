@@ -9,6 +9,11 @@
   top: 41%;
   left: 5%;
   z-index: 10;
+
+  @include tablets {
+    top: 41.2%;
+    left: 10%;
+  }
 }
 .arrow--right {
   position: absolute;
