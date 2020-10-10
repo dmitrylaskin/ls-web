@@ -7,6 +7,7 @@
   font-weight: 700;
   color: #000;
   margin-bottom: rem(25px);
+  line-height: rem(43px);
 }
 .slider-desc__subtitle {
   color: #666666;
@@ -30,10 +31,17 @@
   color: #000;
   font-weight: 700;
 }
+.slider-desc__price-section {
+  display: flex;
+  align-items: center;
+
+}
 .slider-desc__price {
   display: inline-block;
   font-size: rem(60px);
   color: #151515;
+  height: rem(90px);
+  margin-right: rem(30px);
 
 }
 .slider__list {
@@ -54,4 +62,11 @@
   flex-shrink: 0;
   display: flex;
   align-items: center;
+}
+.slider__item-img-wrapper {
+  flex: 1;
+  min-width: 250px;
+}
+.slider__item-img {
+  width: 100%;
 }

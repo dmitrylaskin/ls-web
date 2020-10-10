@@ -150,7 +150,7 @@ a {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.9);
+  background: #313131;
   margin: 0;
   z-index: 10;
   align-items: center;
@@ -164,7 +164,7 @@ a {
   text-align: center;
 }
 .navbar--burger .navbar__link {
-  font-size: 2.2222222222rem;
+  font-size: 2rem;
 }
 
 .phone-number {
@@ -253,6 +253,7 @@ a {
   display: inline-block;
   padding: 1.1111111111rem 2.2222222222rem;
   border-radius: 5.5555555556rem;
+  border: 1px solid transparent;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -271,6 +272,7 @@ a {
   color: #fff;
 }
 .order-form-btn:hover {
+  border: 1px solid #365A49;
   background: #fff;
   color: #365A49;
 }
@@ -1006,6 +1008,7 @@ a {
   font-weight: 700;
   color: #000;
   margin-bottom: 1.3888888889rem;
+  line-height: 2.3888888889rem;
 }
 
 .slider-desc__subtitle {
@@ -1034,10 +1037,17 @@ a {
   font-weight: 700;
 }
 
+.slider-desc__price-section {
+  display: flex;
+  align-items: center;
+}
+
 .slider-desc__price {
   display: inline-block;
   font-size: 3.3333333333rem;
   color: #151515;
+  height: 5rem;
+  margin-right: 1.6666666667rem;
 }
 
 .slider__list {
@@ -1062,11 +1072,33 @@ a {
   align-items: center;
 }
 
+.slider__item-img-wrapper {
+  flex: 1;
+  min-width: 250px;
+}
+
+.slider__item-img {
+  width: 100%;
+}
+
 .dropdown__icon-wrapper {
   background: #86C3D7;
   width: 5rem;
   height: 5rem;
-  padding: 1.1111111111rem;
+  border-radius: 0.2222222222rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2777777778rem;
+}
+.dropdown__icon-wrapper:hover {
+  background: #60AACC;
+}
+
+.dropdown__title {
+  text-transform: uppercase;
+  font-size: 0.7777777778rem;
 }
 
 .dropdown__icon {
@@ -1091,29 +1123,34 @@ a {
 .dropdown:hover .dropdown__menu {
   right: -15.1666666667rem;
   top: 0;
-  opacity: 1;
+  opacity: 0.9;
 }
 
 .dropdown__item {
   display: flex;
-  margin-bottom: 1.6666666667rem;
+  margin-bottom: 1.3888888889rem;
 }
 
 .dropdown__item-name {
   flex: 1;
   padding-left: 1.3888888889rem;
+  font-weight: 700;
+}
+
+.dropdown__item-weight {
+  font-weight: 700;
 }
 
 .dropdown__menu {
-  padding: 1.6666666667rem;
+  padding: 1.3888888889rem 1.6666666667rem 0.5555555556rem 1.6666666667rem;
   color: #000;
   width: 15.1666666667rem;
-  height: 19.1111111111rem;
-  background: lightgrey;
+  background: #fff;
   position: absolute;
   right: 555.5rem;
   transition: opacity 0.2s;
   opacity: 0;
+  z-index: 20;
 }
 
 /*# sourceMappingURL=main.css.map */

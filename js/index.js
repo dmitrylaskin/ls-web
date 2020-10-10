@@ -31,7 +31,7 @@ arrowLeft.addEventListener('click', () => {
 
 })
 burger.addEventListener('click', () => {
- 
+
     navbar.classList.add('navbar--burger')
     document.body.classList.add('body--active-menu')
     burger.style.display = 'none'
