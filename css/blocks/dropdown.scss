@@ -49,6 +49,9 @@
 .dropdown__item {
   display: flex;
   margin-bottom: rem(25px);
+  &:last-child {
+    margin-bottom: 0;
+  }
 
 }
 .dropdown__item-name {

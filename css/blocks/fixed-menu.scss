@@ -2,14 +2,27 @@
   position: fixed;
   top: 20%;
   right: 4%;
+  cursor: pointer;
   @include tablets {
     display: none;
   }
 }
 .fixed-menu__item {
+
   margin-bottom: rem(5px);
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   &--active {
     .fixed-menu__link {
+      border: rem(1px) solid #fff;
+    }
+  }
+
+  &:hover {
+    .fixed-menu__link {
+      transition: all 0.3s;
       border: rem(1px) solid #fff;
     }
   }

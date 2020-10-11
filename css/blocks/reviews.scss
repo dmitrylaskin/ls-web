@@ -51,6 +51,7 @@
   padding-right: 10%;
   padding-top: rem(8px);
   @include tablets {
+    padding-top: 0;
     padding-right: 0;
     margin-left: 0;
   }
@@ -89,5 +90,7 @@
 }
 
 .reviews__switcher-item {
-
+  &:hover {
+    border-color: #0f5a47;
+  }
 }

@@ -42,6 +42,9 @@
   }
 }
 .benefit__text {
+  @include phones {
   margin-left: rem(20px);
+
+  }
 
 }

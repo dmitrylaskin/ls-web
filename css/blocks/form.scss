@@ -19,12 +19,20 @@
 
   @include tablets {
     margin-right: 0;
+    margin-bottom: rem(18px);
+    &:last-child {
+      margin-bottom: 0;
+    }
+
   }
 }
 
 .form__row {
   display: flex;
   margin-bottom: rem(18px);
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .form__block {
