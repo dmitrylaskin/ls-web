@@ -38,11 +38,11 @@ burger.addEventListener('click', () => {
 
     burgerCloseBtn.style.cssText = `
     display: block;
-    position: absolute;
+    position: fixed;
     top: 2.5%;
     right: 4.5%;
     cursor: pointer;
-    z-index: 20;
+    z-index: 30;
     `
 
 })
@@ -57,4 +57,3 @@ window.addEventListener('resize', () => {
         burger.style.display = 'none'
     } else burger.style.display = 'inline-flex'
 })
-

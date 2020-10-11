@@ -374,6 +374,10 @@ a {
 @media screen and (max-width: 768px) {
   .hamburger {
     display: inline-flex;
+    position: fixed;
+    top: 2.5%;
+    right: 2.5%;
+    z-index: 30;
   }
 }
 
