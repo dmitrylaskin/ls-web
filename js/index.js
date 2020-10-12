@@ -3,6 +3,7 @@ const sliderItem = document.querySelector('.slider__item')
 const arrowLeft = document.querySelector('.arrow--left')
 const arrowRight = document.querySelector('.arrow--right')
 const navbar = document.getElementById('navbar')
+const sliderTitle = document.querySelector('.slider-desc__title')
 
 
 let sliderStep = 0
@@ -100,3 +101,10 @@ function toggleMenu(){
 burger.addEventListener('click' , toggleMenu);
 
 
+
+const butifySliderTitle = () => {
+    if (innerWidth <= 480) {
+        sliderTitle.innerHTML = 'Батончик<br>“Гранола виноград”'
+    }
+}
+butifySliderTitle()

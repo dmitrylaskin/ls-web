@@ -25,7 +25,9 @@
   margin-bottom: rem(25px);
   @include tablets {
     text-align: center;
-
+  }
+  @include phones {
+    padding: 0 40px;
   }
 }
 .slider-desc__props {
