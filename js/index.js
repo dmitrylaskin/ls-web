@@ -2,20 +2,24 @@ const sliderList = document.getElementById('slider-list')
 const sliderItem = document.querySelector('.slider__item')
 const arrowLeft = document.querySelector('.arrow--left')
 const arrowRight = document.querySelector('.arrow--right')
-const navbar = document.getElementById('navbar')
-const sliderTitle = document.querySelector('.slider-desc__title')
+const firstSlideTitle = document.getElementById('first-slide-title')
+const secondSlideTitle = document.getElementById('second-slide-title')
+
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('page is loaded')})
 
 
 let sliderStep = 0
 let lastSlide = (sliderList.scrollWidth - sliderItem.clientWidth)
 lastSlide = -lastSlide
+console.log(sliderStep)
 
 
 arrowRight.addEventListener('click', () => {
 
     sliderStep = sliderStep - sliderItem.clientWidth
 
-    if (sliderStep < lastSlide) sliderStep = 0
+    if (sliderStep < lastSlide && sliderStep < lastSlide-1) sliderStep = 0
 
     sliderList.style.transform = `translate(${sliderStep}px)`
 
@@ -30,56 +34,6 @@ arrowLeft.addEventListener('click', () => {
 
 
 })
-
-// window.addEventListener('resize', () => {
-//     if (innerWidth > 768) {
-//         burger.style.display = 'none'
-//     } else burger.style.display = 'block'
-// })
-
-// burger.addEventListener('click', () => {
-//
-//     navbar.classList.add('navbar--burger')
-//     document.body.classList.add('body--active-menu')
-//     burger.style.display = 'none'
-//
-//     burgerCloseBtn.style.cssText = `
-//     display: block;
-//     position: fixed;
-//     top: 2.5%;
-//     right: 4.5%;
-//     cursor: pointer;
-//     z-index: 30;
-//     `
-//
-// })
-// burgerCloseBtn.addEventListener('click', () => {
-//     navbar.classList.remove('navbar--burger')
-//     document.body.classList.remove('body--active-menu')
-//     burger.style.display = 'inline-flex'
-//     burgerCloseBtn.style.display = 'none'
-// })
-
-
-// burgerLink.addEventListener('click', (event) => {
-//     event.preventDefault()
-//
-//     navbar.classList.remove('navbar--burger')
-//     document.body.classList.remove('body--active-menu')
-//     burger.style.display = 'inline-flex'
-//     burgerCloseBtn.style.display = 'none'
-// })
-// burgerLinks.forEach(link => {
-//     link.addEventListener('click', (event) => {
-//         event.preventDefault()
-//
-//         navbar.classList.remove('navbar--burger')
-//         document.body.classList.remove('body--active-menu')
-//         burger.style.display = 'inline-flex'
-//         burgerCloseBtn.style.display = 'none'
-//
-//     })
-// })
 
 
 let burger  = document.querySelector('.burger');
@@ -104,7 +58,22 @@ burger.addEventListener('click' , toggleMenu);
 
 const butifySliderTitle = () => {
     if (innerWidth <= 480) {
-        sliderTitle.innerHTML = 'Батончик<br>“Гранола виноград”'
+        firstSlideTitle.innerHTML = 'Батончик<br>“Гранола виноград”'
+        secondSlideTitle.innerHTML = 'Батончик<br> “Морские водоросли”'
     }
 }
 butifySliderTitle()
+
+
+
+
+let sections = document.querySelectorAll('.accordion-section')
+
+sections.forEach(section => {
+    section.addEventListener('click', () => {
+        section
+            .querySelector('.accordion-section__body')
+            .querySelector('.accordion-section__text').style.maxHeight = '0'
+    })
+  
+})

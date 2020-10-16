@@ -7,19 +7,19 @@
 }
 .arrow--left {
   position: absolute;
-  top: 41%;
-  left: 5%;
+  top: 50%;
+  left: 0;
   z-index: 10;
 
-  @include tablets {
-    top: 41.2%;
-    left: 10%;
-  }
+  //@include tablets {
+  //  top: 41.2%;
+  //  left: 10%;
+  //}
 }
 .arrow--right {
   position: absolute;
-  top: 41%;
-  right: 5%;
+  top: 50%;
+  right: 0;
   z-index: 10;
 }
 .arrow--left-icon {
