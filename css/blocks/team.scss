@@ -1,0 +1,143 @@
+.team {
+  display: flex;
+  justify-content: space-between;
+
+  @include tablets {
+    flex-wrap: wrap;
+    padding: 0 10%;
+    margin-left: -20px;
+  }
+
+  @include phones {
+    margin-left: -70px;
+  }
+}
+
+
+.team__item {
+  flex: 1;
+  text-align: center;
+  margin-right: 20px;
+  cursor: pointer;
+
+  &.active {
+    .team__title {
+      &:after {
+        content: "";
+        transform: rotate(-180deg);
+      }
+    }
+  }
+
+  @include tablets {
+    flex: initial;
+    width: calc(100% / 2 - 20px);
+    margin-right: 0px;
+    margin-left: 20px;
+    margin-bottom: 35px;
+  }
+
+  @include phones {
+    width: 50%;
+    margin-left: 70px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.team-version-mobile .team__item {
+  margin-bottom: 15px;
+}
+
+
+.team__member {
+  height: 288px;
+
+  margin-bottom: 20px;
+}
+.team-version-mobile .team__member {
+  height: 180px;
+  width: 138px;
+}
+
+.team__member-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-left: 32px;
+}
+
+.team__title {
+  color: #323232;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  width: 100%;
+  background: #fff;
+
+
+  &:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-right-width: 4px;
+    border-left-width: 4px;
+    border-top: 6px solid black;
+    border-bottom: 0;
+    display: block;
+    margin-left: 5px;
+  }
+}
+.team-version-mobile .team__title {
+  font-weight: 700;
+
+}
+.team-version-desktop .team__title {
+  margin-left: 30px;
+  margin-bottom: 15px;
+
+}
+
+.team__content {
+  height: 0px;
+  overflow: hidden;
+  transition: height .3s;
+}
+
+.team-version-desktop .team__content {
+  margin-left: 47px;
+}
+
+.team__content-text {
+  font-weight: 300;
+  color: #000;
+}
+
+.team__occ {
+  color: #281e1e;
+}
+.team-version-mobile .team__occ {
+  font-weight: 700;
+}
+
+.team-version-desktop {
+  @include phones {
+
+  display: none;
+  }
+}
+.team-version-mobile {
+  display: none;
+
+  @include phones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
+}

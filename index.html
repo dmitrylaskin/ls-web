@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
     <title>choco 4th week</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
 </head>
 <body>
 <div class="wrapper">
@@ -492,48 +493,136 @@
 
         <section class="section team-section" id="team">
             <div class="container">
-                <h2 class="section__title">Команда</h2>
-                <ul class="team-list">
-                    <li class="team-list__item teammate">
-                        <div class="team-list__img-wrapper beard">
-                            <div class="team-list__img"></div>
+                <div class="section__title">Команда</div>
+                <ul class="team team-version-desktop">
+                    <li class="team__item">
+                        <div class="team__member">
+                            <img class="team__member-pic" src="./img/icons/team-page/beard.jpg" alt="">
                         </div>
-                        <div class="accordion-section">
-                            <div class="accordion-section__header">Борис Федорович</div>
-                            <div class="accordion-section__body">
-                                <div class="accordion-section__position">
-                                    Главный технолог
-                                </div>
-                                <div class="accordion-section__text">
-                                    <p>
-                                        Отвечает за вкусовые качества
-                                        и калорийность.
-                                    </p>
-                                </div>
+                        <button class="team__title" type="button">Борис Федорович</button>
+                        <div class="team__content">
+                            <div class="team__content-block">
+                            <div class="team__occ">Главный технолог</div>
+                                <div class="team__content-text">
 
+                                    Отвечает за вкусовые качества
+                                    и калорийность.
+                                </div>
                             </div>
                         </div>
                     </li>
-                    <li class="team-list__item teammate">
-                        <div class="team-list__img-wrapper smile-girl">
-                            <div class="team-list__img"></div>
+                    <li class="team__item">
+                        <div class="team__member">
+                            <img class="team__member-pic" src="./img/icons/team-page/smile-girl.jpg" alt="">
                         </div>
-                        <div class="accordion-section">
-                            <div class="accordion-section__header">Борис Федорович</div>
-                            <div class="accordion-section__body">
-                                <div class="accordion-section__position">
-                                    Главный технолог
+                        <button class="team__title" type="button">Алла Иванова</button>
+                        <div class="team__content">
+                            <div class="team__content-block">
+                                <div class="team__occ">Специалист по упаковке</div>
+                                <div class="team__content-text">
+                                    Автор запоминающегося стиля
+                                    наших батончиков.
                                 </div>
-                                <div class="accordion-section__text">
-                                    <p>
-                                        Отвечает за вкусовые качества
-                                        и калорийность.
-                                    </p>
-                                </div>
-
                             </div>
                         </div>
                     </li>
+                    <li class="team__item">
+                        <div class="team__member">
+                            <img class="team__member-pic" src="./img/icons/team-page/yellow-guy.jpg" alt="">
+                        </div>
+                        <button class="team__title" type="button">Кирилл Матросов</button>
+                        <div class="team__content">
+                            <div class="team__content-block">
+                                <div class="team__occ">Оператор</div>
+                                <div class="team__content-text">
+                                    С радостью поможет подобрать батончики и оформить заказ.
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="team__item">
+                        <div class="team__member">
+                            <img class="team__member-pic" src="./img/icons/team-page/serious-girl.jpg" alt="">
+                        </div>
+                        <button class="team__title" type="button">Мила Рыжкова</button>
+                        <div class="team__content">
+                            <div class="team__content-block">
+                                <div class="team__occ">PR, маркетинг</div>
+                                <div class="team__content-text">
+                                    По всем вопросам сотрудничества
+                                    и рекламы писать только Миле.
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+                <ul class="team team-version-mobile">
+                    <li class="team__item">
+
+                        <button class="team__title" type="button">Борис Федорович</button>
+                        <div class="team__content">
+                            <div class="team__content-block">
+                                <div class="team__member">
+                                    <img class="team__member-pic" src="./img/icons/team-page/beard.jpg" alt="">
+                                </div>
+                            <div class="team__occ">Главный технолог</div>
+                                <div class="team__content-text">
+
+                                    Отвечает за вкусовые качества
+                                    и калорийность.
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="team__item">
+
+                        <button class="team__title" type="button">Алла Иванова</button>
+                        <div class="team__content">
+                            <div class="team__content-block">
+                                <div class="team__member">
+                                    <img class="team__member-pic" src="./img/icons/team-page/smile-girl.jpg" alt="">
+                                </div>
+                                <div class="team__occ">Специалист по упаковке</div>
+                                <div class="team__content-text">
+                                    Автор запоминающегося стиля
+                                    наших батончиков.
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="team__item">
+
+                        <button class="team__title" type="button">Кирилл Матросов</button>
+                        <div class="team__content">
+                            <div class="team__content-block">
+                                <div class="team__member">
+                                    <img class="team__member-pic" src="./img/icons/team-page/yellow-guy.jpg" alt="">
+                                </div>
+                                <div class="team__occ">Оператор</div>
+                                <div class="team__content-text">
+                                    С радостью поможет подобрать батончики и оформить заказ.
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="team__item">
+
+                        <button class="team__title" type="button">Мила Рыжкова</button>
+                        <div class="team__content">
+                            <div class="team__content-block">
+                                <div class="team__member">
+                                    <img class="team__member-pic" src="./img/icons/team-page/serious-girl.jpg" alt="">
+                                </div>
+                                <div class="team__occ">PR, маркетинг</div>
+                                <div class="team__content-text">
+                                    По всем вопросам сотрудничества
+                                    и рекламы писать только Миле.
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
                 </ul>
             </div>
         </section>
@@ -543,28 +632,7 @@
                 <h2 class="section__title">Отзывы</h2>
                 <div class="reviews">
                     <div class="reviews__display">
-<!--                        <div class="reviews__display-inner">-->
-<!--                            <div class="reviews__avatar">-->
-<!--                                <img-->
-<!--                                        src="./img/icons/review-page/girl.jpg"-->
-<!--                                        alt=""-->
-<!--                                        class="reviews__avatar-img"-->
-<!--                                />-->
-<!--                            </div>-->
-<!--                            <article class="reviews__content">-->
-<!--                                <h3 class="reviews__title">Лучший перекус</h3>-->
-<!--                                <div class="reviews__text">-->
-<!--                                    <p>-->
-<!--                                        Я ем малыми порциями, но часто. Это повышает мою-->
-<!--                                        продуктивность в разы. В течение дня сижу за компьютером-->
-<!--                                        и часто отходить в кафе или на кухню просто не могу себе-->
-<!--                                        позволить. А батончик – он всегда под рукой. Это приятно-->
-<!--                                        и удобно.-->
-<!--                                    </p>-->
-<!--                                </div>-->
-<!--                                <div class="reviews__author">Алена Хмельницкая</div>-->
-<!--                            </article>-->
-<!--                        </div>-->
+
                         <ul class="reviews__list">
                             <li class="reviews__item reviews__item--active" data-linked-with="one">
                                 <div class="reviews__display-inner">
@@ -642,7 +710,7 @@
                     </div>
                     <ul class="reviews__switcher">
                         <li
-                                class="reviews__switcher-item interactive-avatar"
+                                class="reviews__switcher-item interactive-avatar interactive-avatar--active"
                         >
                             <a href="#" class="interactive-avatar__link" data-open="one">
                                 <img
@@ -652,7 +720,7 @@
                                 />
                             </a>
                         </li>
-                        <li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
+                        <li class="reviews__switcher-item interactive-avatar ">
                             <a href="#" class="interactive-avatar__link" data-open="two">
                                 <img
                                         src="./img/icons/review-page/guy.jpg"
@@ -675,7 +743,7 @@
             </div>
         </section>
 
-        <section class="section order-section section--font-color--green">
+        <section class="section order-section section--font-color--green" id="team">
             <div class="container">
                 <h2 class="section__title">Закажите доставку</h2>
                 <form class="form">
@@ -840,8 +908,21 @@
     </ul>
 
 </div>
+<div class="modal" id="modal">
+    <div class="modal__container">
+<div class="modal__content">
+    Сообщение отправлено
+</div>
+        <div class="modal__button-container">
+            <a href="#" class="btn app-close-modal btn--theme--green">Close</a>
+        </div>
+    </div>
+</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.7"></script>
     <script src="./js/index.js"></script>
     <script src="./js/tabs.js"></script>
+    <script src="./js/reviews-acco.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>

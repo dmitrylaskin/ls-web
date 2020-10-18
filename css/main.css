@@ -1358,29 +1358,165 @@ ul, li {
   transition: max-height 1s ease;
 }
 
-.team-list {
+.team {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .team {
+    flex-wrap: wrap;
+    padding: 0 10%;
+    margin-left: -20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team {
+    margin-left: -70px;
+  }
 }
 
-.team-list__img-wrapper {
-  width: 220px;
-  height: 290px;
+.team__item {
+  flex: 1;
+  text-align: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.team__item.active .team__title:after {
+  content: "";
+  transform: rotate(-180deg);
+}
+@media screen and (max-width: 768px) {
+  .team__item {
+    flex: initial;
+    width: calc(100% / 2 - 20px);
+    margin-right: 0px;
+    margin-left: 20px;
+    margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team__item {
+    width: 50%;
+    margin-left: 70px;
+  }
+}
+.team__item:last-child {
+  margin-right: 0;
+}
+
+.team-version-mobile .team__item {
+  margin-bottom: 15px;
+}
+
+.team__member {
+  height: 288px;
+  margin-bottom: 20px;
+}
+
+.team-version-mobile .team__member {
+  height: 180px;
+  width: 138px;
+}
+
+.team__member-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-left: 32px;
+}
+
+.team__title {
+  color: #323232;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  width: 100%;
+  background: #fff;
+}
+.team__title:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-right-width: 4px;
+  border-left-width: 4px;
+  border-top: 6px solid black;
+  border-bottom: 0;
+  display: block;
+  margin-left: 5px;
+}
+
+.team-version-mobile .team__title {
+  font-weight: 700;
+}
+
+.team-version-desktop .team__title {
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+.team__content {
+  height: 0px;
   overflow: hidden;
+  transition: height 0.3s;
 }
 
-.beard .team-list__img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: url("../img/icons/team-page/beard.jpg") 35% 100% no-repeat;
+.team-version-desktop .team__content {
+  margin-left: 47px;
 }
 
-.smile-girl .team-list__img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: url("../img/icons/team-page/smile-girl.jpg") 35% 100% no-repeat;
+.team__content-text {
+  font-weight: 300;
+  color: #000;
+}
+
+.team__occ {
+  color: #281e1e;
+}
+
+.team-version-mobile .team__occ {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 480px) {
+  .team-version-desktop {
+    display: none;
+  }
+}
+
+.team-version-mobile {
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .team-version-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.modal.error-modal .moda.__content {
+  color: red;
+}
+.modal.fancybox-content {
+  padding-left: 0 !important;
+}
+.modal .fancybox-button {
+  display: none;
+}
+
+.modal__container {
+  background: #fff;
+  padding: 35px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__content {
+  margin-bottom: 15px;
+  color: #000;
 }
 
 /*# sourceMappingURL=main.css.map */

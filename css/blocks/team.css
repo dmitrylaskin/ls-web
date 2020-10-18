@@ -1,0 +1,20 @@
+/* Error: Undefined mixin.
+ *   ,
+ * 5 | /   @include tablets {
+ * 6 | |     flex-wrap: wrap;
+ * 7 | |     padding: 0 10%;
+ * 8 | |     margin-left: -20px;
+ * 9 | \   }
+ *   '
+ *   team.scss 5:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a   \2577 \a 5 \2502  \250c    @include tablets {\a 6 \2502  \2502      flex-wrap: wrap;\a 7 \2502  \2502      padding: 0 10%;\a 8 \2502  \2502      margin-left: -20px;\a 9 \2502  \2514    }\a   \2575 \a   team.scss 5:3  root stylesheet";
+}
