@@ -1,14 +1,24 @@
-$('form').submit( event => {
+let button = document.getElementById('form-submit')
+let modalWindow = document.querySelector('.modal')
+let onClose = document.getElementById('modal-close')
+
+button.addEventListener('click', (event) => {
+    event.preventDefault()
+    modalWindow.style.display = 'block'
+    body.classList.toggle('body--active-menu');
+    console.log('form btn')
+
+
+})
+onClose.addEventListener('click', (event) => {
     event.preventDefault()
 
-    $.fancybox.open({
-        src: '#modal',
-        type: 'inline'
-    })
+    modalWindow.style.display = 'none'
+    body.classList.toggle('body--active-menu');
 })
-
-$('.app-submit-btn').click(event => {
-    event.preventDefault()
-
-    $.fancybox.close()
-})
+window.onclick = (event) => {
+    if (event.target === modalWindow) {
+        modalWindow.style.display = 'none'
+        body.classList.toggle('body--active-menu');
+    }
+}

@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
     <title>choco 4th week</title>
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
 </head>
 <body>
 <div class="wrapper">
@@ -816,6 +815,7 @@
                                     type="submit"
                                     value="Заказать"
                                     class="btn order-form-btn"
+                                    id="form-submit"
                             />
                             <input
                                     type="reset"
@@ -908,18 +908,17 @@
     </ul>
 
 </div>
-<div class="modal" id="modal">
-    <div class="modal__container">
-<div class="modal__content">
-    Сообщение отправлено
-</div>
-        <div class="modal__button-container">
-            <a href="#" class="btn app-close-modal btn--theme--green">Close</a>
+<div class="modal">
+    <div class="modal-content">
+<!--        <span class="modal__close">&times;</span>-->
+<!--        <p class="modal__text">Modal window text</p>-->
+        <div class="modal__block">
+            <span class="modal__title">Cообщение отправлено</span>
+            <a href="" class="btn order-form-btn" id="modal-close">Закрыть</a>
         </div>
     </div>
 </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.7"></script>
     <script src="./js/index.js"></script>
     <script src="./js/tabs.js"></script>
     <script src="./js/reviews-acco.js"></script>
