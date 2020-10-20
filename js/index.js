@@ -17,20 +17,15 @@ lastSlide = -lastSlide
 arrowRight.addEventListener('click', () => {
 
     sliderStep = sliderStep - sliderItem.clientWidth
-
     if (sliderStep < lastSlide && sliderStep < lastSlide-1) sliderStep = 0
-
     sliderList.style.transform = `translate(${sliderStep}px)`
 
 })
 arrowLeft.addEventListener('click', () => {
 
     sliderStep = sliderStep + sliderItem.clientWidth
-
     if (sliderStep > 0) sliderStep = lastSlide
-
     sliderList.style.transform = `translate(${sliderStep}px)`
-
 
 })
 
@@ -62,17 +57,3 @@ const butifySliderTitle = () => {
     }
 }
 butifySliderTitle()
-
-
-
-
-let sections = document.querySelectorAll('.accordion-section')
-
-sections.forEach(section => {
-    section.addEventListener('click', () => {
-        section
-            .querySelector('.accordion-section__body')
-            .querySelector('.accordion-section__text').style.maxHeight = '0'
-    })
-  
-})

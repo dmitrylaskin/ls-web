@@ -11,22 +11,29 @@ let modalTitle = document.querySelector('.modal__title')
 button.addEventListener('click', (event) => {
     event.preventDefault()
 
-    modalWindow.style.display = 'block'
-    body.classList.toggle('body--active-menu');
-
-    modalTitle.classList.remove('modal__title-error')
 
 
+    let fieldValues = [formName, formPhone, textArea]
+    fieldValues.forEach(field => fieldValidate(field))
 
-    sendRequest('post', 'https://webdev-api.loftschool.com/sendmail')
-        .then(data => {
+    let errorFields = document.querySelectorAll('.error-field')
 
-            modalTitle.textContent = data.message
+    if (errorFields.length === 0) {
+        modalWindow.style.display = 'block'
+        body.classList.toggle('body--active-menu');
+        modalTitle.classList.remove('modal__title-error')
 
-            if (data.status === 0) {
-                modalTitle.classList.add('modal__title-error')
-            }
-        })
+        sendRequest('post', 'https://webdev-api.loftschool.com/sendmail')
+            .then(data => {
+
+                modalTitle.textContent = data.message
+
+                if (data.status === 0) {
+                    modalTitle.classList.add('modal__title-error')
+                }
+            })
+    }
+
 
 
 })
@@ -45,7 +52,10 @@ function sendRequest(method, url, body = null) {
         return response.json()
     })
 }
-
+function fieldValidate (fieldName) {
+    fieldName.classList.remove('error-field')
+    if (fieldName.value.trim() === '') fieldName.classList.add('error-field')
+}
 
 onClose.addEventListener('click', (event) => {
     event.preventDefault()

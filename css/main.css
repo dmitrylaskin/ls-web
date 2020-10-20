@@ -982,6 +982,10 @@ ul, li {
   justify-content: center;
 }
 
+.error-field {
+  border: 2px solid #ff5050;
+}
+
 .contacts {
   font-style: normal;
   font-size: 1.1111111111rem;
