@@ -8,7 +8,7 @@ let textArea = document.getElementById('textArea')
 let modalTitle = document.querySelector('.modal__title')
 
 
-button.addEventListener('click', (event) => {
+button.addEventListener('click', async (event) => {
     event.preventDefault()
 
     let fieldValues = [formName, formPhone, textArea]
@@ -19,9 +19,8 @@ button.addEventListener('click', (event) => {
     if (errorFields.length === 0) {
 
 
-        sendRequest('post','https://webdev-api.loftschool.com/sendmail')
-            .then(data => {
-                
+        let data = await sendRequest('post','https://webdev-api.loftschool.com/sendmail')
+
                 modalWindow.style.display = 'block'
                 body.classList.toggle('body--active-menu');
                 modalTitle.classList.remove('modal__title-error')
@@ -30,14 +29,14 @@ button.addEventListener('click', (event) => {
                 if (data.status === 0) {
                     modalTitle.classList.add('modal__title-error')
                 }
-            })
+
     }
 
 
 
 })
-function sendRequest(method, url, body = null) {
-    return fetch(url, {
+async function sendRequest(method, url, body = null) {
+    let response = await fetch(url, {
         method: method,
         body: JSON.stringify({
                     name: formName.value,
@@ -47,10 +46,9 @@ function sendRequest(method, url, body = null) {
                 }),
         headers: {'content-type': 'application/json'}
     })
-        .then(response => {
         return response.json()
-    })
 }
+
 function fieldValidate (fieldName) {
     fieldName.classList.remove('error-field')
     if (fieldName.value.trim() === '') fieldName.classList.add('error-field')
