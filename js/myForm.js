@@ -11,21 +11,20 @@ let modalTitle = document.querySelector('.modal__title')
 button.addEventListener('click', (event) => {
     event.preventDefault()
 
-
-
     let fieldValues = [formName, formPhone, textArea]
     fieldValues.forEach(field => fieldValidate(field))
 
     let errorFields = document.querySelectorAll('.error-field')
 
     if (errorFields.length === 0) {
-        modalWindow.style.display = 'block'
-        body.classList.toggle('body--active-menu');
-        modalTitle.classList.remove('modal__title-error')
 
-        sendRequest('post', 'https://webdev-api.loftschool.com/sendmail')
+
+        sendRequest('post','https://webdev-api.loftschool.com/sendmail')
             .then(data => {
-
+                
+                modalWindow.style.display = 'block'
+                body.classList.toggle('body--active-menu');
+                modalTitle.classList.remove('modal__title-error')
                 modalTitle.textContent = data.message
 
                 if (data.status === 0) {
