@@ -7,25 +7,26 @@ let formPhone = document.forms[0].elements.phone
 let textArea = document.getElementById('textArea')
 let modalTitle = document.querySelector('.modal__title')
 
-console.log(document.forms[0].elements.name.value)
-console.log(document.forms[0].elements.phone.value)
-console.log(document.forms[0].phone.value)
 
 button.addEventListener('click', (event) => {
     event.preventDefault()
+
     modalWindow.style.display = 'block'
     body.classList.toggle('body--active-menu');
-    console.log(formName.value)
-    console.log(formPhone)
+
+    modalTitle.classList.remove('modal__title-error')
+
 
 
     sendRequest('post', 'https://webdev-api.loftschool.com/sendmail')
         .then(data => {
-            console.log(data.message)
 
             modalTitle.textContent = data.message
+
+            if (data.status === 0) {
+                modalTitle.classList.add('modal__title-error')
+            }
         })
-    console.log(modalTitle.textContent)
 
 
 })
