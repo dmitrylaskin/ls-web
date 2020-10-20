@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
 let sliderStep = 0
 let lastSlide = (sliderList.scrollWidth - sliderItem.clientWidth)
 lastSlide = -lastSlide
-console.log(sliderStep)
 
 
 arrowRight.addEventListener('click', () => {

@@ -750,35 +750,35 @@
                         <div class="form__row">
                             <label class="form__block">
                                 <div class="form__title">Имя</div>
-                                <input type="text" class="form__input"/>
+                                <input type="text" class="form__input" name="name" placeholder="Имя*" required/>
                             </label>
                             <label class="form__block">
                                 <div class="form__title">Телефон</div>
-                                <input type="text" class="form__input"/>
+                                <input type="email" class="form__input" name="phone" placeholder="Email" required />
                             </label>
                         </div>
                         <div class="form__row">
                             <label class="form__block">
                                 <div class="form__title">Улица</div>
-                                <input type="text" class="form__input"/>
+                                <input type="text" class="form__input" name="street"/>
                             </label>
                         </div>
                         <div class="form__row">
                             <label class="form__block">
                                 <div class="form__title">Дом</div>
-                                <input type="text" class="form__input"/>
+                                <input type="text" class="form__input" name="build"/>
                             </label>
                             <label class="form__block">
                                 <div class="form__title">Корпус</div>
-                                <input type="text" class="form__input"/>
+                                <input type="text" class="form__input" name="housing"/>
                             </label>
                             <label class="form__block">
                                 <div class="form__title">Квартира</div>
-                                <input type="text" class="form__input"/>
+                                <input type="text" class="form__input" name="apt"/>
                             </label>
                             <label class="form__block">
                                 <div class="form__title">Этаж</div>
-                                <input type="text" class="form__input"/>
+                                <input type="text" class="form__input" name="flor"/>
                             </label>
                         </div>
                     </div>
@@ -788,6 +788,7 @@
                                 <div class="form__title">Комментарий</div>
                                 <textarea
                                         class="form__input form__input--textarea"
+                                        id="textArea"
                                 ></textarea>
                             </label>
                         </div>
@@ -910,10 +911,8 @@
 </div>
 <div class="modal">
     <div class="modal-content">
-<!--        <span class="modal__close">&times;</span>-->
-<!--        <p class="modal__text">Modal window text</p>-->
         <div class="modal__block">
-            <span class="modal__title">Cообщение отправлено</span>
+            <span class="modal__title">modal title text</span>
             <a href="" class="btn order-form-btn" id="modal-close">Закрыть</a>
         </div>
     </div>
@@ -922,6 +921,6 @@
     <script src="./js/index.js"></script>
     <script src="./js/tabs.js"></script>
     <script src="./js/reviews-acco.js"></script>
-    <script src="./js/modal.js"></script>
+    <script src="js/myForm.js"></script>
 </body>
 </html>
