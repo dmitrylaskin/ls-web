@@ -32,8 +32,6 @@ button.addEventListener('click', async (event) => {
 
     }
 
-
-
 })
 async function sendRequest(method, url, body = null) {
     let response = await fetch(url, {
@@ -59,11 +57,14 @@ onClose.addEventListener('click', (event) => {
 
     modalWindow.style.display = 'none'
     body.classList.toggle('body--active-menu');
+    document.forms[0].reset()
 })
 window.onclick = (event) => {
     if (event.target === modalWindow) {
         modalWindow.style.display = 'none'
         body.classList.toggle('body--active-menu');
+        console.log(document.forms[0])
+        document.forms[0].reset()
     }
 }
 
