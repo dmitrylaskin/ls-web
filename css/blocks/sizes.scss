@@ -1,46 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
-.accordion {
-  background: url("../img/icons/acc-page/acc-menu.jpg") center center/cover no-repeat; }
-.accordion__container {
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start; }
-.accordion__slide-title {
-  margin-top: 115px;
-  margin-left: 84px;
-  font-weight: bold;
-  font-size: 48px;
-  text-transform: uppercase;
-  color: #fff; }
-.accordion__slide-title-container {
-  height: 100%;
-  width: 50%; }
-.accordion__slide-tabs {
-  width: 50%;
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end; }
 
 .sizes {
   height: 100%; }
@@ -71,21 +28,13 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
-.sizes__item_milk {
-  //background: url("../img/icons/acc-page/coco.jpg") left center/cover no-repeat
-}
-.sizes__item_honey {
-  //background: #151515;
-  }
-.sizes__item_berries {
-  //background: #E01F3D;
-  }
+
 .sizes__item-title {
   filter: brightness(20%);
   position: relative;
   min-width: 90px;
   height: 100%;
-  
+
 
 }
 .sizes__item-title_milk {
@@ -133,4 +82,3 @@
   padding: 31px 38px;
   font-size: 16px;
   color: #ffffff; }
-
