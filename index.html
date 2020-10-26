@@ -19,25 +19,25 @@
                     <nav class="navbar" id="navbar">
                         <ul class="navbar__list">
                             <li class="navbar__item">
-                                <a class="navbar__link" href="#">О нас</a>
+                                <a class="navbar__link" data-scroll-to="hero" href="#">О нас</a>
                             </li>
                             <li class="navbar__item">
-                                <a class="navbar__link" href="#">Батончики</a>
+                                <a class="navbar__link" data-scroll-to="slider" href="#">Батончики</a>
                             </li>
                             <li class="navbar__item">
-                                <a class="navbar__link" href="#">Команда</a>
+                                <a class="navbar__link" data-scroll-to="team" href="#">Команда</a>
                             </li>
                             <li class="navbar__item">
-                                <a class="navbar__link" href="#">Меню</a>
+                                <a class="navbar__link" data-scroll-to="accordion" href="#">Меню</a>
                             </li>
                             <li class="navbar__item">
-                                <a class="navbar__link" href="#">Отзывы</a>
+                                <a class="navbar__link" data-scroll-to="reviews" href="#">Отзывы</a>
                             </li>
                             <li class="navbar__item">
-                                <a class="navbar__link" href="#">Как мы работает</a>
+                                <a class="navbar__link" data-scroll-to="" href="#">Как мы работает</a>
                             </li>
                             <li class="navbar__item">
-                                <a class="navbar__link" href="#">Контакты</a>
+                                <a class="navbar__link" data-scroll-to="map" href="#">Контакты</a>
                             </li>
                         </ul>
                     </nav>
@@ -110,7 +110,7 @@
                     <p class="hero-title__subtitle">
                         Наши батончики идеально подходят для тех, кто следит за своим здоровьем
                     </p>
-                    <a class="hero-title__btn btn" href="#">заказать</a>
+                    <a class="hero-title__btn btn" data-scroll-to="orders" href="#">заказать</a>
                 </div>
 
                 <div class="advantages">
@@ -147,7 +147,7 @@
         </section>
 
 
-        <section class="section benefits-section" id="about-us">
+        <section data-section-id="hero" class="section benefits-section" id="about-us">
 
             <div class="container">
                 <div class="headline">
@@ -223,7 +223,7 @@
 
         </section>
 
-        <section class="section slider-section" id="bars">
+        <section data-section-id="slider" class="section slider-section" id="bars">
 
 
             <div class="container slider-container">
@@ -490,7 +490,7 @@
 
         </section>
 
-        <section class="section team-section" id="team">
+        <section data-section-id="team" class="section team-section" id="team">
             <div class="container">
                 <div class="section__title">Команда</div>
                 <ul class="team team-version-desktop">
@@ -626,7 +626,7 @@
             </div>
         </section>
 
-        <section class=" section accordion">
+        <section data-section-id="accordion" class=" section accordion">
             <div class="accordion__container">
                 <div class="accordion__slide-title-container">
                     <h2 class="accordion__slide-title">меню</h2>
@@ -682,7 +682,7 @@
             </div>
         </section>
 
-        <section class="section reviews-section" id="reveiws">
+        <section data-section-id="reviews" class="section reviews-section" id="reveiws">
             <div class="container">
                 <h2 class="section__title">Отзывы</h2>
                 <div class="reviews">
@@ -723,17 +723,16 @@
                                         />
                                     </div>
                                     <article class="reviews__content">
-                                        <h3 class="reviews__title">LIST 2</h3>
+                                        <h3 class="reviews__title">Идеально подходят для спортсменов</h3>
                                         <div class="reviews__text">
                                             <p>
-                                                Я ем малыми порциями, но часто. Это повышает мою
-                                                продуктивность в разы. В течение дня сижу за компьютером
-                                                и часто отходить в кафе или на кухню просто не могу себе
-                                                позволить. А батончик – он всегда под рукой. Это приятно
-                                                и удобно.
+                                                После тренировок всегда хочется быстро закинуться чем-то белковым,
+                                                потому что до дома ещё нужно доехать. А кушать хочется.
+                                                Протеиновые батончики всегда выручают в этом плане.
+                                                Спасибо производителю за этот качественный и экологичный продукт.
                                             </p>
                                         </div>
-                                        <div class="reviews__author">Алена Хмельницкая</div>
+                                        <div class="reviews__author">Вадим Грачев</div>
                                     </article>
                                 </div>
                             </li>
@@ -747,17 +746,16 @@
                                         />
                                     </div>
                                     <article class="reviews__content">
-                                        <h3 class="reviews__title">LIST 3</h3>
+                                        <h3 class="reviews__title">Лучшие батончики премиум уровня</h3>
                                         <div class="reviews__text">
                                             <p>
-                                                Я ем малыми порциями, но часто. Это повышает мою
-                                                продуктивность в разы. В течение дня сижу за компьютером
-                                                и часто отходить в кафе или на кухню просто не могу себе
-                                                позволить. А батончик – он всегда под рукой. Это приятно
-                                                и удобно.
+                                                Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами,
+                                                однако, как говорится – оно того стоит. Нравится носить с собой, нравится держать в руке.
+                                                Ну и конечно же, кушать. Идеально утоляют голод, хоть и не надолго.
+                                                Через час уже ем ещё один. Но это скорее плюс, чем минус.
                                             </p>
                                         </div>
-                                        <div class="reviews__author">Алена Хмельницкая</div>
+                                        <div class="reviews__author">Мария Орлова</div>
                                     </article>
                                 </div>
                             </li>
@@ -798,7 +796,7 @@
             </div>
         </section>
 
-        <section class="section order-section section--font-color--green" id="team">
+        <section data-section-id="orders" class="section order-section section--font-color--green" id="team">
             <div class="container">
                 <h2 class="section__title">Закажите доставку</h2>
                 <form class="form">
@@ -885,8 +883,7 @@
             </div>
         </section>
 
-
-        <section class="section map-section" id="contacts">
+        <section data-section-id="map" class="section map-section" id="contacts">
             <div id="map"></div>
             <footer class="footer">
                 <div class="container footer__container">
@@ -978,6 +975,7 @@
     <script src="./js/map.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/tabs.js"></script>
+    <script src="./js/ops.js"></script>
     <script src="./js/reviews-acco.js"></script>
     <script src="js/myForm.js"></script>
     <script src="js/acc-menu.js"></script>
