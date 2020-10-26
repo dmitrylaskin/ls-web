@@ -34,7 +34,7 @@
                                 <a class="navbar__link" data-scroll-to="reviews" href="#">Отзывы</a>
                             </li>
                             <li class="navbar__item">
-                                <a class="navbar__link" data-scroll-to="" href="#">Как мы работает</a>
+                                <a class="navbar__link" data-scroll-to="our-work" href="#">Как мы работает</a>
                             </li>
                             <li class="navbar__item">
                                 <a class="navbar__link" data-scroll-to="map" href="#">Контакты</a>
@@ -626,7 +626,7 @@
             </div>
         </section>
 
-        <section data-sidemenu-theme="white" data-section-id="accordion" class=" section accordion">
+        <section data-sidemenu-theme="white" data-section-id="accordion" class="section accordion">
             <div class="accordion__container">
                 <div class="accordion__slide-title-container">
                     <h2 class="accordion__slide-title">меню</h2>
@@ -792,6 +792,30 @@
                             </a>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </section>
+
+        <section data-sidemenu-theme="green" data-section-id="our-work" class="section video-section">
+            <h2 class="section__title">Как мы работаем</h2>
+            <div class="video__container">
+                <div class="video__player">
+                    <video id="player" poster="img/icons/player-page/player/cover.png">
+                        <source src="movie.mp4" type="video/mp4">
+                    </video>
+                    <img src="img/icons/player-page/player/Play_white.png" alt="" class="play video__player-img">
+                </div>
+                <div class="video__toolbar">
+                    <div class="duration">
+                        <img src="img/icons/player-page/player/Play_gray.png" alt="" class="play duration__img">
+                        <input type="range" class="duration__length" id="durationLevel">
+                    </div>
+                    <div class="sound">
+                        <img src="img/icons/player-page/player/Volum_gray.png" class="sound__mic" id="mic" alt="">
+                        <div class="sound__volume">
+                            <input type="range" class="duration__length duration__length--other" id="micLevel">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -980,5 +1004,6 @@
     <script src="./js/reviews-acco.js"></script>
     <script src="js/myForm.js"></script>
     <script src="js/acc-menu.js"></script>
+    <script src="js/video.js"></script>
 </body>
 </html>
