@@ -70,7 +70,7 @@ a {
   background: url("../img/icons/main-page/tracery.png") right bottom no-repeat;
   background-color: #61C4D9;
   position: relative;
-  height: 100vh;
+  height: 100%;
   min-height: 36.1111111111rem;
   position: relative;
 }
@@ -336,6 +336,16 @@ a {
   border-radius: 50%;
 }
 
+.fixed-menu-shadowed .fixed-menu__list .fixed-menu__item .fixed-menu__link:before {
+  background: #365A49;
+}
+.fixed-menu-shadowed .fixed-menu__list .fixed-menu__item--active .fixed-menu__link {
+  border: 0.0555555556rem solid #365A49;
+}
+.fixed-menu-shadowed .fixed-menu__list .fixed-menu__item:hover .fixed-menu__link {
+  border: 0.0555555556rem solid #365A49;
+}
+
 @media screen and (max-width: 768px) {
   .advantages {
     display: none;
@@ -490,7 +500,7 @@ ul, li {
 }
 
 .section {
-  height: 100vh;
+  height: 100%;
   min-height: 36.1111111111rem;
   display: flex;
   flex-direction: column;

@@ -10,7 +10,7 @@
 <body>
 <div class="wrapper">
     <div class="maincontent">
-        <section class="hero">
+        <section data-sidemenu-theme="white" class="hero">
             <div class="container hero__container">
                 <header class="header">
                     <a class="logo" href="#">
@@ -19,7 +19,7 @@
                     <nav class="navbar" id="navbar">
                         <ul class="navbar__list">
                             <li class="navbar__item">
-                                <a class="navbar__link" data-scroll-to="hero" href="#">О нас</a>
+                                <a class="navbar__link" data-scroll-to="why" href="#">О нас</a>
                             </li>
                             <li class="navbar__item">
                                 <a class="navbar__link" data-scroll-to="slider" href="#">Батончики</a>
@@ -147,7 +147,7 @@
         </section>
 
 
-        <section data-section-id="hero" class="section benefits-section" id="about-us">
+        <section data-sidemenu-theme="green" data-section-id="why" class="section benefits-section" id="about-us">
 
             <div class="container">
                 <div class="headline">
@@ -223,7 +223,7 @@
 
         </section>
 
-        <section data-section-id="slider" class="section slider-section" id="bars">
+        <section data-sidemenu-theme="green" data-section-id="slider" class="section slider-section" id="bars">
 
 
             <div class="container slider-container">
@@ -308,7 +308,7 @@
                                 </div>
                                 <div class="slider-desc__price-section">
                                     <div class="slider-desc__price">140 ₽</div>
-                                    <div class="order-form-btn btn">Заказать</div>
+                                    <a href="#" data-scroll-to="orders" class="order-form-btn btn">Заказать</a>
                                 </div>
 
 
@@ -390,7 +390,7 @@
                                 </div>
                                 <div class="slider-desc__price-section">
                                     <div class="slider-desc__price">140 ₽</div>
-                                    <div class="order-form-btn btn">Заказать</div>
+                                    <a href="#" data-scroll-to="orders" class="order-form-btn btn">Заказать</a>
                                 </div>
 
 
@@ -472,7 +472,7 @@
                                 </div>
                                 <div class="slider-desc__price-section">
                                     <div class="slider-desc__price">9 990 ₽</div>
-                                    <div class="order-form-btn btn">Заказать</div>
+                                    <a href="#" data-scroll-to="orders" class="order-form-btn btn">Заказать</a>
                                 </div>
 
 
@@ -490,7 +490,7 @@
 
         </section>
 
-        <section data-section-id="team" class="section team-section" id="team">
+        <section data-sidemenu-theme="green" data-section-id="team" class="section team-section" id="team">
             <div class="container">
                 <div class="section__title">Команда</div>
                 <ul class="team team-version-desktop">
@@ -626,7 +626,7 @@
             </div>
         </section>
 
-        <section data-section-id="accordion" class=" section accordion">
+        <section data-sidemenu-theme="white" data-section-id="accordion" class=" section accordion">
             <div class="accordion__container">
                 <div class="accordion__slide-title-container">
                     <h2 class="accordion__slide-title">меню</h2>
@@ -682,7 +682,7 @@
             </div>
         </section>
 
-        <section data-section-id="reviews" class="section reviews-section" id="reveiws">
+        <section data-sidemenu-theme="green" data-section-id="reviews" class="section reviews-section" id="reveiws">
             <div class="container">
                 <h2 class="section__title">Отзывы</h2>
                 <div class="reviews">
@@ -796,7 +796,7 @@
             </div>
         </section>
 
-        <section data-section-id="orders" class="section order-section section--font-color--green" id="team">
+        <section data-sidemenu-theme="white" data-section-id="orders" class="section order-section section--font-color--green" id="team">
             <div class="container">
                 <h2 class="section__title">Закажите доставку</h2>
                 <form class="form">
@@ -883,7 +883,7 @@
             </div>
         </section>
 
-        <section data-section-id="map" class="section map-section" id="contacts">
+        <section data-sidemenu-theme="green" data-section-id="map" class="section map-section" id="contacts">
             <div id="map"></div>
             <footer class="footer">
                 <div class="container footer__container">
@@ -942,16 +942,16 @@
 </div>
 
 
-<div class="fixed-menu">
+<div class="fixed-menu fixed-menu-shadowed">
     <ul class="fixed-menu__list">
         <li class="fixed-menu__item">
-            <a href="#" class="fixed-menu__link"></a>
+            <a href="#" data-scroll-to="hero" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item fixed-menu__item--active">
-            <a href="#" class="fixed-menu__link"></a>
+            <a href="#" data-scroll-to="slider" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-            <a href="#" class="fixed-menu__link"></a>
+            <a href="#" data-scroll-to="team" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
             <a href="#" class="fixed-menu__link"></a>
@@ -972,6 +972,7 @@
 </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.js" integrity="sha512-gRg3MTbqGUwZiqkDRUj7BJOqiYX6tQDAkZVq6zCHfRUxBhoW0kRG4ASllaK31PIe+I+xdaJhLcZXbs2O2r8SRg==" crossorigin="anonymous"></script>
     <script src="./js/map.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/tabs.js"></script>

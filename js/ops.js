@@ -11,6 +11,18 @@ const perfTr = sectionEq => {
         inScroll = true
         const position = sectionEq * -100
 
+        const currentSec = section.eq(sectionEq)
+        const menuTheme = currentSec.attr('data-sidemenu-theme')
+        const sideMenu = $('.fixed-menu')
+
+        if (menuTheme === 'green') {
+            sideMenu.addClass('fixed-menu-shadowed')
+        } else {
+            sideMenu.removeClass('fixed-menu-shadowed')
+        }
+
+
+
         display.css({
             transform: `translateY(${position}%)`
         })
@@ -18,6 +30,15 @@ const perfTr = sectionEq => {
 
         setTimeout(() => {
             inScroll = false
+
+            sideMenu
+                .find('.fixed-menu__item')
+                .eq(sectionEq)
+                .addClass('fixed-menu__item--active')
+                .siblings()
+                .removeClass('fixed-menu__item--active')
+
+
         },600)
     }
 
@@ -75,3 +96,19 @@ $(`[data-scroll-to]`).click(e => {
 
     perfTr(reqSec.index())
 })
+
+
+$('body').swipe({
+    swipe: function (event, direction) {
+
+        const scroller = viewportScroller();
+        let scrollDirection = ''
+
+        if(direction === 'up') scrollDirection = 'next'
+        if(direction === 'down') scrollDirection = 'prev'
+
+
+        alert(direction);
+        scroller[scrollDirection]()
+    },
+});
