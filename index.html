@@ -10,7 +10,7 @@
 <body>
 <div class="wrapper">
     <div class="maincontent">
-        <section data-sidemenu-theme="white" class="hero">
+        <section data-sidemenu-theme="white" data-section-id="hero" class="hero">
             <div class="container hero__container">
                 <header class="header">
                     <a class="logo" href="#">
@@ -820,7 +820,7 @@
             </div>
         </section>
 
-        <section data-sidemenu-theme="white" data-section-id="orders" class="section order-section section--font-color--green" id="team">
+        <section data-sidemenu-theme="green" data-section-id="orders" class="section order-section section--font-color--green" id="team">
             <div class="container">
                 <h2 class="section__title">Закажите доставку</h2>
                 <form class="form">
@@ -966,22 +966,34 @@
 </div>
 
 
-<div class="fixed-menu fixed-menu-shadowed">
+<div class="fixed-menu">
     <ul class="fixed-menu__list">
-        <li class="fixed-menu__item">
+        <li class="fixed-menu__item fixed-menu__item--active">
             <a href="#" data-scroll-to="hero" class="fixed-menu__link"></a>
         </li>
-        <li class="fixed-menu__item fixed-menu__item--active">
+        <li class="fixed-menu__item">
+            <a href="#" data-scroll-to="why" class="fixed-menu__link"></a>
+        </li>
+        <li class="fixed-menu__item">
             <a href="#" data-scroll-to="slider" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
             <a href="#" data-scroll-to="team" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-            <a href="#" class="fixed-menu__link"></a>
+            <a href="#" data-scroll-to="accordion" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-            <a href="#" class="fixed-menu__link"></a>
+            <a href="#" data-scroll-to="reviews" class="fixed-menu__link"></a>
+        </li>
+        <li class="fixed-menu__item">
+            <a href="#" data-scroll-to="our-work" class="fixed-menu__link"></a>
+        </li>
+        <li class="fixed-menu__item">
+            <a href="#" data-scroll-to="orders" class="fixed-menu__link"></a>
+        </li>
+        <li class="fixed-menu__item">
+            <a href="#" data-scroll-to="map" class="fixed-menu__link"></a>
         </li>
     </ul>
 
