@@ -41,6 +41,8 @@ links.forEach(function(element){
 })
 
 function toggleMenu(){
+
+
     burger.classList.toggle('burger--active');
     overlay.classList.toggle('overlay--active');
     body.classList.toggle('body--active-menu');

@@ -294,6 +294,7 @@ a {
   top: 20%;
   right: 4%;
   cursor: pointer;
+  z-index: 100;
 }
 @media screen and (max-width: 768px) {
   .fixed-menu {
@@ -547,6 +548,7 @@ ul, li {
   position: absolute;
   bottom: -4.4444444444rem;
   left: 0;
+  z-index: 10;
 }
 @media screen and (max-width: 480px) {
   .benefits-section:before {
@@ -1128,12 +1130,32 @@ ul, li {
   left: 0;
   z-index: 10;
 }
+@media screen and (max-width: 768px) {
+  .arrow--left {
+    left: 80px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .arrow--left {
+    left: 0;
+  }
+}
 
 .arrow--right {
   position: absolute;
   top: 50%;
   right: 0;
   z-index: 10;
+}
+@media screen and (max-width: 768px) {
+  .arrow--right {
+    right: 80px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .arrow--right {
+    right: 0;
+  }
 }
 
 .arrow--left-icon {
@@ -1142,6 +1164,30 @@ ul, li {
 
 .slider-section {
   background-color: #F8FAF9;
+  position: relative;
+}
+.slider-section:before {
+  content: url("../img/icons/slider-page/blackberries.png");
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 10;
+}
+@media screen and (max-width: 480px) {
+  .slider-section:before {
+    bottom: -50px;
+  }
+}
+.slider-section:after {
+  content: url("../img/icons/slider-page/grey-striped-leaf.png");
+  right: -30px;
+  bottom: -255px;
+  position: absolute;
+}
+@media screen and (max-width: 480px) {
+  .slider-section:after {
+    right: -90px;
+  }
 }
 
 .slider-container {
@@ -1423,6 +1469,11 @@ ul, li {
   object-fit: cover;
   margin-left: 32px;
 }
+@media screen and (max-width: 768px) {
+  .team__member-pic {
+    margin-left: 68px;
+  }
+}
 
 .team__title {
   color: #323232;
@@ -1483,11 +1534,23 @@ ul, li {
     display: none;
   }
 }
+@media screen and (max-width: 768px) {
+  .team-version-desktop {
+    display: none;
+  }
+}
 
 .team-version-mobile {
   display: none;
 }
 @media screen and (max-width: 480px) {
+  .team-version-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
   .team-version-mobile {
     display: flex;
     flex-direction: column;
@@ -1545,17 +1608,8 @@ ul, li {
 .accordion__container {
   height: 100%;
   width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
   align-items: flex-start;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
@@ -1567,27 +1621,33 @@ ul, li {
   text-transform: uppercase;
   color: #fff;
 }
+@media screen and (max-width: 480px) {
+  .accordion__slide-title {
+    margin-left: 10px;
+  }
+}
 
 .accordion__slide-title-container {
   height: 100%;
   width: 50%;
 }
+@media screen and (max-width: 768px) {
+  .accordion__slide-title-container {
+    width: 0%;
+  }
+}
 
 .accordion__slide-tabs {
   width: 50%;
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
   align-items: flex-end;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
+}
+@media screen and (max-width: 768px) {
+  .accordion__slide-tabs {
+    width: 100%;
+  }
 }
 
 .sizes {
@@ -1595,18 +1655,9 @@ ul, li {
 }
 
 .sizes__list {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
   align-items: flex-end;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
   height: 100%;
   margin: 0;
@@ -1614,13 +1665,11 @@ ul, li {
 }
 
 .sizes__item {
+  z-index: 20;
   position: relative;
   min-width: 90px;
   height: 100%;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1650,11 +1699,7 @@ ul, li {
   position: absolute;
   bottom: 0;
   left: 0;
-  -webkit-transform: rotateZ(-90deg);
-  -ms-transform: rotate(-90deg);
   transform: rotateZ(-90deg);
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   white-space: nowrap;
   line-height: 80px;
@@ -1665,8 +1710,6 @@ ul, li {
   max-width: 0;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
@@ -1712,6 +1755,24 @@ ul, li {
   bottom: -70px;
   left: 90px;
 }
+@media screen and (max-width: 768px) {
+  .video__container:after {
+    top: -75px;
+    right: 15px;
+  }
+  .video__container:before {
+    bottom: 75px;
+    left: -25px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .video__container:before {
+    bottom: -80px;
+  }
+  .video__container:after {
+    right: -30px;
+  }
+}
 
 .video__player {
   position: relative;
@@ -1725,6 +1786,13 @@ ul, li {
   top: 149px;
   cursor: pointer;
 }
+@media screen and (max-width: 480px) {
+  .video__player-img {
+    max-width: 60px;
+    left: 175px;
+    top: 75px;
+  }
+}
 
 .video__player-img--active {
   opacity: 0;
@@ -1736,6 +1804,13 @@ ul, li {
   min-height: 370px;
   max-height: 370px;
 }
+@media screen and (max-width: 480px) {
+  #player {
+    min-width: 0;
+    max-width: 400px;
+    min-height: 0;
+  }
+}
 
 .video__toolbar {
   overflow: hidden;
@@ -1744,6 +1819,11 @@ ul, li {
   background-color: #3e3e3e;
   margin-top: -8px;
   display: flex;
+}
+@media screen and (max-width: 480px) {
+  .video__toolbar {
+    max-width: 400px;
+  }
 }
 
 .sound {
@@ -1764,6 +1844,11 @@ ul, li {
 .duration {
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .duration {
+    width: 60%;
+  }
 }
 
 .duration__img {
@@ -1807,6 +1892,17 @@ ul, li {
 .duration__circle--high {
   right: 0;
   position: absolute;
+}
+
+.team-section {
+  position: relative;
+}
+.team-section:before {
+  content: url("../img/icons/team-page/single-berry.png");
+  position: absolute;
+  left: 10px;
+  bottom: -58px;
+  z-index: 10;
 }
 
 /*# sourceMappingURL=main.css.map */

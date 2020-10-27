@@ -1,3 +1,11 @@
-
+.team-section {
+  position: relative;
+}
+.team-section:before {
+  content: url("../img/icons/team-page/single-berry.png");
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
 
 /*# sourceMappingURL=team-section.css.map */

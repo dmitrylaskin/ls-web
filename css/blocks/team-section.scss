@@ -1,0 +1,12 @@
+.team-section {
+  position: relative;
+
+  &:before {
+    content: url("../img/icons/team-page/single-berry.png");
+    position: absolute;
+    left: 10px;
+    bottom: -58px;
+    z-index: 10;
+  }
+
+}

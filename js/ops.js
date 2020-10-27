@@ -59,6 +59,11 @@ const scrollView = direction => {
     }
 }
 
+// window.addEventListener('resize', () => {
+//     if (innerWidth > 768) {
+//
+//     }
+// })
 
 $(window).on('wheel', e => {
     const deltaY = e.originalEvent.deltaY
@@ -98,17 +103,32 @@ $(`[data-scroll-to]`).click(e => {
 })
 
 
-$('body').swipe({
-    swipe: function (event, direction) {
 
-        const scroller = viewportScroller();
-        let scrollDirection = ''
+    // $('body').swipe({
+    //
+    //     swipe: function (event, direction) {
+    //
+    //         const scroller = viewportScroller();
+    //         let scrollDirection = ''
+    //
+    //         if(direction === 'up') scrollDirection = 'next'
+    //         if(direction === 'down') scrollDirection = 'prev'
+    //
+    //
+    //         alert(direction);
+    //         scroller[scrollDirection]()
+    //     },
+    // });
 
-        if(direction === 'up') scrollDirection = 'next'
-        if(direction === 'down') scrollDirection = 'prev'
 
-
-        alert(direction);
-        scroller[scrollDirection]()
-    },
-});
+// $(function() {
+//     $("body").swipe( {
+//         //Generic swipe handler for all directions
+//         swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+//             $(this).text("You swiped " + direction );
+//         }
+//     });
+//
+//     //Set some options later
+//     $("body").swipe( {fingers:2} );
+// });

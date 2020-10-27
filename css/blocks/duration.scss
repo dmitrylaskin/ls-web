@@ -1,6 +1,9 @@
 .duration {
   display: flex;
   align-items: center;
+  @include phones {
+    width: 60%;
+  }
 }
 
 .duration__img {

@@ -66,6 +66,9 @@
   height: 100%;
   object-fit: cover;
   margin-left: 32px;
+  @include tablets {
+    margin-left: 68px;
+  }
 }
 
 .team__title {
@@ -128,11 +131,19 @@
 
   display: none;
   }
+  @include tablets {
+    display: none;
+  }
 }
 .team-version-mobile {
   display: none;
 
   @include phones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @include tablets {
     display: flex;
     flex-direction: column;
     align-items: center;

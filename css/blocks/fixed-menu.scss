@@ -3,6 +3,7 @@
   top: 20%;
   right: 4%;
   cursor: pointer;
+  z-index: 100;
   @include tablets {
     display: none;
   }

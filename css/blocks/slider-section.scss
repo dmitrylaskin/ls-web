@@ -1,6 +1,27 @@
 .slider-section {
-
   background-color: #F8FAF9;
+  position: relative;
+
+  &:before {
+    content: url("../img/icons/slider-page/blackberries.png");
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 10;
+    @include phones {
+      bottom: -50px;
+    }
+
+  }
+  &:after {
+    content: url("../img/icons/slider-page/grey-striped-leaf.png");
+    right: -30px;
+    bottom: -255px;
+    position: absolute;
+    @include phones {
+      right: -90px;
+    }
+  }
 
 }
 .slider-container {

@@ -10,6 +10,12 @@
   top: 50%;
   left: 0;
   z-index: 10;
+  @include tablets {
+    left: 80px;
+  }
+  @include phones {
+    left: 0;
+  }
 
   //@include tablets {
   //  top: 41.2%;
@@ -21,6 +27,12 @@
   top: 50%;
   right: 0;
   z-index: 10;
+  @include tablets {
+    right: 80px;
+  }
+  @include phones {
+    right: 0;
+  }
 }
 .arrow--left-icon {
   transform: rotate(180deg);
