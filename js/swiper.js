@@ -21,3 +21,4 @@ var mySwiper = new Swiper('.swiper-container', {
         clickable: true,
     },
 })
+mySwiper.addEventListener('touchmove', {passive: true})

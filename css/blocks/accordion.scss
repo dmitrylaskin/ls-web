@@ -2,16 +2,25 @@
 .accordion {
   background: url("../img/icons/acc-page/acc-menu.jpg") center center/cover no-repeat; }
 .accordion__container {
+  position: relative;
   height: 100%;
   width: 100%;
-
   display: flex;
-
   align-items: flex-start;
-
   justify-content: flex-start;
+
+  &:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+  }
 }
 .accordion__slide-title {
+  position: absolute;
+  z-index: 10;
   margin-top: 115px;
   margin-left: 84px;
   font-weight: bold;
@@ -24,8 +33,10 @@
 
 }
 .accordion__slide-title-container {
+  position: relative;
   height: 100%;
   width: 50%;
+
 
   @include tablets {
     width: 0%;
