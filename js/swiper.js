@@ -5,7 +5,7 @@
     const fixedMenuItem = $('.fixed-menu__item');
     const sectionActiveClass = 'section--active';
     const fMIActiveClass = 'fixed-menu__item--active';
-    const darkThemeClass = 'fixed-menu--shadowed';
+    const darkThemeClass = 'fixed-menu-shadowed';
 
     const mobileDetect = new MobileDetect(window.navigator.userAgent);
     const isMobile = mobileDetect.mobile();
@@ -18,6 +18,7 @@
         const position = ndx*-100;
 
         if(isNaN(position)) {
+            console.log('передан неверное значение в calcSectionPosition');
             return 0;
         } else {
             return position;
@@ -25,7 +26,7 @@
     }
 
     const changeSidemenuTheme = (ndx) => {
-        section.eq(ndx).attr('data-sidemenu-theme') == 'dark' ? fixedMenu.addClass(darkThemeClass) : fixedMenu.removeClass(darkThemeClass);
+        section.eq(ndx).attr('data-sidemenu-theme') == 'green' ? fixedMenu.addClass(darkThemeClass) : fixedMenu.removeClass(darkThemeClass);
     }
 
     const findNdxOfActiveEl = (item, activeClass) => {
