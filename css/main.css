@@ -1474,6 +1474,11 @@ ul, li {
     margin-left: 68px;
   }
 }
+@media screen and (max-width: 480px) {
+  .team__member-pic {
+    margin-left: 38px;
+  }
+}
 
 .team__title {
   color: #323232;
